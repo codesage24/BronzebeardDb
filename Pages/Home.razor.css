@@ -13,3 +13,22 @@ img {
     align-items: center;
     margin-bottom: 50px;
 }
+
+.links {
+    display: grid;
+    grid-auto-flow: column; /* makes grid grow horizontally */
+    grid-auto-columns: auto;
+    gap: 2rem;
+}
+
+    .links a {
+        font-size: large;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--secondary-font-color);
+        transition: color 0.25s ease;
+    }
+
+    .links a:hover {
+        color: var(--primary-font-color);
+    }
