@@ -2,24 +2,36 @@
 
 @inject HttpClient Http
 
-<PageTitle>World Drop Items</PageTitle>
+<PageTitle>World Drops</PageTitle>
 
-<h1>World Drop Items</h1>
+<h1>World Drops</h1>
 
 <div class="world-drops">
-    <div class="wd-filter">
+    <div class="pane wd-filter">
         <select @bind="_selectedZoneId">
             <option value="">-- Select a Zone --</option>
-            
+
             @foreach (var zone in _zones ?? [])
             {
                 <option value="@zone.Id">@zone.Name</option>
             }
         </select>
     </div>
-    
-    <div class="wd-display">
 
+    <div class="pane wd-display">
+        <span style="display: block; position: relative; width: 772px; height: 515px; background: @GetMapUrl();">
+            <div style="display: block; width: 100%; height: 100%;">
+
+            </div>
+        </span>
+@*         <div>
+            <div class="pin" style="left: 32%; top: 23.1%;">
+                <a href="javascript:;" style="cursor: default;"></a>
+            </div>
+            <div class="pin" style="left: 42.9%; top: 43.2%;">
+                <a href="javascript:;" style="cursor: default;"></a>
+            </div>
+        </div> *@
     </div>
 </div>
 
@@ -29,8 +41,10 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _zones = await Http.GetFromJsonAsync<Zone[]>("content/world-drop-items.json");
+        _zones = await Http.GetFromJsonAsync<Zone[]>("content/world-drops.json");
     }
+
+    private string GetMapUrl() => $"url(\"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg\")";
 
     public record Zone(string Id, string Name, ZoneItem[] Items);
 
