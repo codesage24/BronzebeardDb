@@ -31,6 +31,6 @@ img {
         transition: color 0.25s ease;
     }
 
-    .links a:hover {
-        color: var(--primary-font-color);
-    }
+        .links a:hover {
+            color: var(--primary-font-color);
+        }

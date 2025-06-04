@@ -1,9 +1,38 @@
 ﻿@page "/world-drops"
 
+@inject HttpClient Http
+
 <PageTitle>World Drop Items</PageTitle>
 
 <h1>World Drop Items</h1>
 
-@code {
+<div class="world-drops">
+    <div class="wd-filter">
+        <select @bind="_selectedZoneId">
+            <option value="">-- Select a Zone --</option>
+            
+            @foreach (var zone in _zones ?? [])
+            {
+                <option value="@zone.Id">@zone.Name</option>
+            }
+        </select>
+    </div>
+    
+    <div class="wd-display">
 
+    </div>
+</div>
+
+@code {
+    Zone[] _zones;
+    string _selectedZoneId = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _zones = await Http.GetFromJsonAsync<Zone[]>("content/world-drop-items.json");
+    }
+
+    public record Zone(string Id, string Name, ZoneItem[] Items);
+
+    public record ZoneItem(string Id, string Name);
 }
