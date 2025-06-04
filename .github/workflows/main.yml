@@ -42,17 +42,8 @@ jobs:
         with:
           dotnet-version: '9.0'
 
-      - name: Debug - List directory
-        run: ls -R
-
       - name: Publish app
         run: dotnet publish BronzebeardDb.csproj -c Release
-
-      - name: Debug - List publish output
-        run: ls -R /home/runner/work/BronzebeardDb/BronzebeardDb/bin/Release/net9.0/publish/
-
-      - name: Check publish output location
-        run: find BronzebeardDb/bin/Release -type f | grep index.html || echo "index.html not found"
 
       - name: Rewrite base href
         uses: SteveSandersonMS/ghaction-rewrite-base-href@5b54862a8831e012d4f1a8b2660894415fdde8ec # v1.1.0
