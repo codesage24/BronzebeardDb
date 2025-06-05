@@ -36,5 +36,28 @@ select {
         height: 515px;
     }
 
+    .wd-map .pin {
+        position: absolute;
+    }
+
+    .wd-map .map-name {
+        font-size: 13px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: var(--primary-font-color);
+        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+    }
+
+    .wd-map .map-coordinates {
+        font-size: 13px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        color: var(--secondary-font-color);
+        text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+    }
+
 .wd-table {
+    width: 50vw;
 }

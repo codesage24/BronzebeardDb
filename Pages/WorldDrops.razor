@@ -2,6 +2,7 @@
 @using System.Text.Json
 @using System.Text.Json.Serialization
 
+@inject IJSRuntime Js
 @inject HttpClient Http
 
 <PageTitle>World Drops</PageTitle>
@@ -10,7 +11,24 @@
 
 <div class="world-drops">
     <div class="pane wd-map">
-        <span style="background: @GetMapUrl();"></span>
+        @if (!string.IsNullOrWhiteSpace(_selectedZoneId))
+        {
+            <span style="background: @GetMapUrl();" @onmousemove="OnMouseMoveMap" @ref="_imageRef">
+                @foreach (var thing in GetItems() ?? [])
+                {
+                    <div class="pin" style="top: 0; left: 0;">
+                        <img src="https://db.ascension.gg/static/images/Mapper/pin-yellow-new.png" alt="pin" />
+                    </div>
+                }
+                
+                <div class="map-name">@_zones[_selectedZoneId].Name</div>
+
+                @if (_mousePosition.X != 0d || _mousePosition.Y != 0d)
+                {
+                    <div class="map-coordinates">(@_mousePosition.X.ToString("#0.0"), @_mousePosition.Y.ToString("#0.0"))</div>
+                }
+            </span>
+        }
     </div>
 
     <div class="pane wd-table">
@@ -22,15 +40,11 @@
                 <option value="@id">@zone.Name</option>
             }
         </select>
-        
+
         @{
             var items = GetItems();
 
-            if (items is null || items.Length == 0)
-            {
-                <p class="text-muted">No items found for the selected zone.</p>
-            }
-            else
+            if (items is not null && items.Length > 0)
             {
                 <table class="table table-dark table-striped">
                     <thead>
@@ -58,7 +72,7 @@
                             <td>@item.RequiresLevel</td>
                             <td>@(item.ItemLevel > 0 ? item.ItemLevel : string.Empty)</td>
                             <td>@item.Cost</td>
-                            <td>@(_zones[item.ZoneId].Name)</td>
+                            <td>@_zones[item.ZoneId].Name</td>
                         </tr>
                     }
                     </tbody>
@@ -73,6 +87,9 @@
 
     IDictionary<string, Zone> _zones;
     IDictionary<string, Item[]> _itemsByZone;
+
+    Coordinate _mousePosition;
+    ElementReference _imageRef;
 
     protected override async Task OnInitializedAsync()
     {
@@ -102,4 +119,21 @@
     }
 
     private string GetMapUrl() => $"url(\"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg\")";
+
+    private async Task OnMouseMoveMap(MouseEventArgs args)
+    {
+        var rect = await Js.InvokeAsync<ElementRect>("getElementRect", _imageRef);
+        _mousePosition = new Coordinate(
+            Math.Round(((args.ClientX - rect.X) / rect.Width) * 100, 1),
+            Math.Round(((args.ClientY - rect.Y) / rect.Height) * 100, 1));
+    }
+
+    private void OnMouseLeaveMap()
+    {
+        _mousePosition = new Coordinate(0, 0);
+    }
+
+    public record Coordinate(double X, double Y);
+
+    public record ElementRect(double X, double Y, double Width, double Height);
 }
