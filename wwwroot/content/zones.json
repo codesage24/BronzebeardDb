@@ -1,0 +1,218 @@
+[
+  {
+    "id": "36",
+    "name": "Alterac Mountains"
+  },
+  {
+    "id": "45",
+    "name": "Arathi Highlands"
+  },
+  {
+    "id": "331",
+    "name": "Ashenvale"
+  },
+  {
+    "id": "16",
+    "name": "Azshara"
+  },
+  {
+    "id": "3524",
+    "name": "Azuremyst Isle"
+  },
+  {
+    "id": "3",
+    "name": "Badlands"
+  },
+  {
+    "id": "4",
+    "name": "Blasted Lands"
+  },
+  {
+    "id": "3525",
+    "name": "Bloodmyst Isle"
+  },
+  {
+    "id": "Burning Steppes",
+    "name": ""
+  },
+  {
+    "id": "148",
+    "name": "Darkshore"
+  },
+  {
+    "id": "1657",
+    "name": "Darnassus"
+  },
+  {
+    "id": "41",
+    "name": "Deadwind Pass"
+  },
+  {
+    "id": "405",
+    "name": "Desolace"
+  },
+  {
+    "id": "1",
+    "name": "Dun Morogh"
+  },
+  {
+    "id": "14",
+    "name": "Durotar"
+  },
+  {
+    "id": "10",
+    "name": "Duskwood"
+  },
+  {
+    "id": "15",
+    "name": "Dustwallow Marsh"
+  },
+  {
+    "id": "139",
+    "name": "Eastern Plaguelands"
+  },
+  {
+    "id": "12",
+    "name": "Elwynn Forest"
+  },
+  {
+    "id": "3430",
+    "name": "Eversong Woods"
+  },
+  {
+    "id": "361",
+    "name": "Felwood"
+  },
+  {
+    "id": "357",
+    "name": "Feralas"
+  },
+  {
+    "id": "3433",
+    "name": "Ghostlands"
+  },
+  {
+    "id": "267",
+    "name": "Hillsbrad Foothills"
+  },
+  {
+    "id": "1537",
+    "name": "Ironforge"
+  },
+  {
+    "id": "4080",
+    "name": "Isle of Quel'Danas"
+  },
+  {
+    "id": "38",
+    "name": "Loch Modan"
+  },
+  {
+    "id": "493",
+    "name": "Moonglade"
+  },
+  {
+    "id": "215",
+    "name": "Mulgore"
+  },
+  {
+    "id": "1637",
+    "name": "Orgrimmar"
+  },
+  {
+    "id": "44",
+    "name": "Redridge Mountains"
+  },
+  {
+    "id": "51",
+    "name": "Searing Gorge"
+  },
+  {
+    "id": "1377",
+    "name": "Silithus"
+  },
+  {
+    "id": "3487",
+    "name": "Silvermoon City"
+  },
+  {
+    "id": "130",
+    "name": "Silverpine Forest"
+  },
+  {
+    "id": "406",
+    "name": "Stonetalon Mountains"
+  },
+  {
+    "id": "1519",
+    "name": "Stormwind City"
+  },
+  {
+    "id": "33",
+    "name": "Stranglethorn Vale"
+  },
+  {
+    "id": "8",
+    "name": "Swamp of Sorrows"
+  },
+  {
+    "id": "440",
+    "name": "Tanaris"
+  },
+  {
+    "id": "141",
+    "name": "Teldrassil"
+  },
+  {
+    "id": "17",
+    "name": "The Barrens"
+  },
+  {
+    "id": "3557",
+    "name": "The Exodar"
+  },
+  {
+    "id": "47",
+    "name": "The Hinterlands"
+  },
+  {
+    "id": "4298",
+    "name": "The Scarlet Enclave"
+  },
+  {
+    "id": "400",
+    "name": "Thousand Needles"
+  },
+  {
+    "id": "1638",
+    "name": "Thunder Bluff"
+  },
+  {
+    "id": "85",
+    "name": "Tirisfal Glades"
+  },
+  {
+    "id": "1497",
+    "name": "Undercity"
+  },
+  {
+    "id": "490",
+    "name": "Un'Goro Crater"
+  },
+  {
+    "id": "28",
+    "name": "Western Plaguelands"
+  },
+  {
+    "id": "40",
+    "name": "Westfall"
+  },
+  {
+    "id": "11",
+    "name": "Wetlands"
+  },
+  {
+    "id": "618",
+    "name": "Winterspring"
+  }
+]
