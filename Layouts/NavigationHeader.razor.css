@@ -1,6 +1,6 @@
 ﻿.bb-navigation-header {
     height: auto;
-    width: 100vw;
+    width: 100%;
     background-color: var(--secondary-background-color);
     border-bottom: 1px solid var(--primary-font-color);
     display: grid;

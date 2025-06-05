@@ -1,23 +1,134 @@
 [
   {
-    "id": "331",
-    "name": "Ashenvale",
-    "items": [
-
-    ]
+    "x": 18.2,
+    "y": 29.3,
+    "source": "Mysterious Orb",
+    "id": "0",
+    "name": "Unknown",
+    "rarity": "Unknown",
+    "type": "",
+    "slot": "",
+    "requiresLevel": 0,
+    "maxLevel": 0,
+    "cost": "",
+    "zoneId": "46"
   },
   {
-    "id": "16",
-    "name": "Azshara",
-    "items": [
-
-    ]
+    "x": 15.5,
+    "y": 26.6,
+    "source": "Warlock's Supplies",
+    "id": "410221",
+    "name": "Ashstone Robes",
+    "rarity": "Rare",
+    "type": "Cloth",
+    "slot": "Chest",
+    "requiresLevel": 60,
+    "maxLevel": 65,
+    "cost": "82s 69c",
+    "zoneId": "46"
   },
   {
-    "id": "3524",
-    "name": "Azuremyst Isle",
-    "items": [
-
-    ]
+    "x": 12.9,
+    "y": 30.8,
+    "source": "Ritual Dagger",
+    "id": "410220",
+    "name": "Infernal Fang",
+    "rarity": "Rare",
+    "type": "Dagger",
+    "slot": "Main Hand",
+    "requiresLevel": 60,
+    "maxLevel": 65,
+    "cost": "2g 20s 19c",
+    "zoneId": "46"
+  },
+  {
+    "x": 12.4,
+    "y": 36.8,
+    "source": "Thar'zul",
+    "id": "1013985",
+    "name": "Mystic Scroll: Agent of Chaos",
+    "rarity": "Epic",
+    "type": "Mystic Scroll",
+    "requiresLevel": 60,
+    "cost": "1c",
+    "zoneId": "46"
+  },
+  {
+    "x": 12.4,
+    "y": 38.8,
+    "source": "Thar'zul's Staff",
+    "id": "410219",
+    "name": "Bloodspire Staff",
+    "rarity": "Rare",
+    "type": "Staff",
+    "slot": "Two-Hand",
+    "requiresLevel": 60,
+    "itemLevel": 65,
+    "cost": "1c",
+    "zoneId": "46"
+  },
+  {
+    "x": 42.8,
+    "y": 54.3,
+    "source": "Hellforge Shortsword",
+    "id": "410195",
+    "name": "Blackrock Side Blade",
+    "rarity": "Rare",
+    "type": "Sword",
+    "slot": "One-Hand",
+    "requiresLevel": 60,
+    "itemLevel": 65,
+    "cost": "2g 10s 35c",
+    "zoneId": "46"
+  },
+  {
+    "x": 77.9,
+    "y": 78,
+    "source": "Mysterious Altar",
+    "id": "200049",
+    "name": "Mystic Scroll: Soul Harvest",
+    "rarity": "Legendary",
+    "type": "Mystic Scroll",
+    "requiresLevel": 30,
+    "cost": "1c",
+    "zoneId": "46"
+  },
+  {
+    "x": 45.4,
+    "y": 60.3,
+    "source": "Mysterious Cache",
+    "id": "200174",
+    "name": "Lava Sweep",
+    "rarity": "Legendary",
+    "type": "Mystic Scroll",
+    "requiresLevel": 30,
+    "cost": "1c",
+    "zoneId": "46"
+  },
+  {
+    "x": 17.4,
+    "y": 29.6,
+    "source": "Nether Portal",
+    "id": "201456",
+    "name": "Mystic Scroll: Nether Portal",
+    "rarity": "Legendary",
+    "type": "Mystic Scroll",
+    "requiresLevel": 30,
+    "cost": "1c",
+    "zoneId": "46"
+  },
+  {
+    "x": 16.3,
+    "y": 57.8,
+    "source": "Cinderthread Sash",
+    "id": "410218",
+    "name": "Cinderthread Sash",
+    "rarity": "Rare",
+    "type": "Cloth",
+    "slot": "Waist",
+    "requiresLevel": 60,
+    "maxLevel": 65,
+    "cost": "58s 56c",
+    "zoneId": "46"
   }
 ]
