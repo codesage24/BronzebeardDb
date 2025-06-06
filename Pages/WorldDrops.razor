@@ -88,8 +88,8 @@
     IDictionary<string, Zone> _zones;
     IDictionary<string, Item[]> _itemsByZone;
 
-    Coordinate _mousePosition;
     ElementReference _imageRef;
+    Coordinate _mousePosition = new Coordinate(0.0, 0.0);
 
     protected override async Task OnInitializedAsync()
     {
