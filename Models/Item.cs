@@ -12,8 +12,8 @@ public record Item
     int ItemLevel,
     string Cost,
     string ZoneId,
-    decimal X,
-    decimal Y
+    double X,
+    double Y
 );
 
 public enum Rarity

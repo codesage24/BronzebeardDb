@@ -1,4 +1,5 @@
 ﻿@page "/world-drops"
+
 @using System.Text.Json
 @using System.Text.Json.Serialization
 
@@ -13,17 +14,21 @@
     <div class="pane wd-map">
         @if (!string.IsNullOrWhiteSpace(_selectedZoneId))
         {
-            <span style="background: @GetMapUrl();" @onmousemove="OnMouseMoveMap" @ref="_imageRef">
-                @foreach (var thing in GetItems() ?? [])
+            <img src="@MapUrl" style="display:none" @onload="@OnMapLoaded" />
+            <span style="background: url(@MapUrl)" @onmousemove="OnMouseMoveMap" @onmouseleave="OnMouseLeaveMap" @ref="_mapRef">
+
+                @foreach (var item in (_selectedMapLoaded ? _selectedZoneItems : []))
                 {
-                    <div class="pin" style="top: 0; left: 0;">
+                    var coordinates = GetItemCoordinates(item);
+
+                    <div class="pin" style="left: @(coordinates.X)px; top: @(coordinates.Y)px;" title="@($"{item.Name} ({item.X}, {item.Y})")">
                         <img src="https://db.ascension.gg/static/images/Mapper/pin-yellow-new.png" alt="pin" />
                     </div>
                 }
-                
+
                 <div class="map-name">@_zones[_selectedZoneId].Name</div>
 
-                @if (_mousePosition.X != 0d || _mousePosition.Y != 0d)
+                @if (_mousePosition.X != default || _mousePosition.Y != default)
                 {
                     <div class="map-coordinates">(@_mousePosition.X.ToString("#0.0"), @_mousePosition.Y.ToString("#0.0"))</div>
                 }
@@ -32,7 +37,7 @@
     </div>
 
     <div class="pane wd-table">
-        <select @bind="_selectedZoneId">
+        <select @onchange="OnChangeMap">
             <option value="">-- Select a Zone --</option>
 
             @foreach (var (id, zone) in _zones ?? new Dictionary<string, Zone>())
@@ -41,13 +46,10 @@
             }
         </select>
 
-        @{
-            var items = GetItems();
-
-            if (items is not null && items.Length > 0)
-            {
-                <table class="table table-dark table-striped">
-                    <thead>
+        @if (_selectedZoneItems.Any())
+        {
+            <table class="table table-dark table-striped">
+                <thead>
                     <tr>
                         <th>Item</th>
                         <th>Source</th>
@@ -59,9 +61,9 @@
                         <th>Cost</th>
                         <th>Zone</th>
                     </tr>
-                    </thead>
-                    <tbody>
-                    @foreach (var item in items)
+                </thead>
+                <tbody>
+                    @foreach (var item in _selectedZoneItems)
                     {
                         <tr>
                             <td>@item.Name</td>
@@ -75,35 +77,53 @@
                             <td>@_zones[item.ZoneId].Name</td>
                         </tr>
                     }
-                    </tbody>
-                </table>
-            }
+                </tbody>
+            </table>
         }
     </div>
 </div>
 
 @code {
+    bool _selectedMapLoaded = false;
+    Item[] _selectedZoneItems = [];
     string _selectedZoneId = string.Empty;
 
     IDictionary<string, Zone> _zones;
     IDictionary<string, Item[]> _itemsByZone;
 
-    ElementReference _imageRef;
-    Coordinate _mousePosition = new Coordinate(0.0, 0.0);
+    ElementRect _mapRect;
+    ElementReference _mapRef;
+    Coordinate _mousePosition = new();
 
     protected override async Task OnInitializedAsync()
     {
         var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-                Converters = { new JsonStringEnumConverter() }
-            };
+        {
+            PropertyNameCaseInsensitive = true,
+            Converters = { new JsonStringEnumConverter() }
+        };
 
         var zones = await Http.GetFromJsonAsync<Zone[]>("content/zones.json", options);
         var items = await Http.GetFromJsonAsync<Item[]>("content/world-drops.json", options);
 
         _zones = zones.ToDictionary(x => x.Id, y => y);
         _itemsByZone = items.GroupBy(x => x.ZoneId).ToDictionary(group => group.Key, group => group.ToArray());
+    }
+
+    private void OnChangeMap(ChangeEventArgs args)
+    {
+        _selectedMapLoaded = false;
+
+        _selectedZoneId = args.Value.ToString();
+
+        _selectedZoneItems = GetItems();
+    }
+
+    private async Task OnMapLoaded()
+    {
+        _mapRect ??= await Js.InvokeAsync<ElementRect>("getElementRect", _mapRef);
+
+        _selectedMapLoaded = true;
     }
 
     private Item[] GetItems()
@@ -118,22 +138,36 @@
         return success ? items : [];
     }
 
-    private string GetMapUrl() => $"url(\"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg\")";
-
-    private async Task OnMouseMoveMap(MouseEventArgs args)
+    private void OnMouseMoveMap(MouseEventArgs args)
     {
-        var rect = await Js.InvokeAsync<ElementRect>("getElementRect", _imageRef);
-        _mousePosition = new Coordinate(
-            Math.Round(((args.ClientX - rect.X) / rect.Width) * 100, 1),
-            Math.Round(((args.ClientY - rect.Y) / rect.Height) * 100, 1));
+        if (_selectedMapLoaded)
+        {
+            var x = Math.Round(((args.ClientX - _mapRect.X) / _mapRect.Width) * 100, 1);
+            var y = Math.Round(((args.ClientY - _mapRect.Y) / _mapRect.Height) * 100, 1);
+
+            _mousePosition = new Coordinate(x, y);
+        }
+        else
+        {
+            _mousePosition = new();
+        }
     }
 
     private void OnMouseLeaveMap()
     {
-        _mousePosition = new Coordinate(0, 0);
+        _mousePosition = new();
     }
 
-    public record Coordinate(double X, double Y);
+    private Coordinate GetItemCoordinates(Item item)
+    {
+        Console.WriteLine($"{item.Name} - X: {item.X} Y: {item.Y}");
+
+        return new(Math.Round((item.X * _mapRect.Width) / 100, 1), Math.Round((item.Y * _mapRect.Height) / 100, 1));
+    }
+
+    private string MapUrl => $"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg";
+
+    public record Coordinate(double X = default, double Y = default);
 
     public record ElementRect(double X, double Y, double Width, double Height);
 }
