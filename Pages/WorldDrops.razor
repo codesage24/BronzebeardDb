@@ -1,10 +1,12 @@
 ﻿@page "/world-drops"
+@page "/world-drops/{ZoneName}/"
 
 @using System.Text.Json
 @using System.Text.Json.Serialization
 
 @inject IJSRuntime Js
 @inject HttpClient Http
+@inject NavigationManager Navigation
 
 <PageTitle>World Drops</PageTitle>
 
@@ -19,14 +21,12 @@
 
                 @foreach (var item in (_selectedMapLoaded ? _selectedZoneItems : []))
                 {
-                    var coordinates = GetItemCoordinates(item);
-
-                    <div class="pin" style="left: @(coordinates.X)px; top: @(coordinates.Y)px;" title="@($"{item.Name} ({item.X}, {item.Y})")">
-                        <img src="https://db.ascension.gg/static/images/Mapper/pin-yellow-new.png" alt="pin" />
+                    <div class="pin" style="left: @(item.X)%; top: @(item.Y)%;" title="@($"{item.Name} ({item.X}, {item.Y})")">
+                        <a href="javascript:;" style="cursor: default;"></a>
                     </div>
                 }
 
-                <div class="map-name">@_zones[_selectedZoneId].Name</div>
+                <div class="map-name">@(_zones[_selectedZoneId].Name)</div>
 
                 @if (_mousePosition.X != default || _mousePosition.Y != default)
                 {
@@ -40,7 +40,7 @@
         <select @onchange="OnChangeMap">
             <option value="">-- Select a Zone --</option>
 
-            @foreach (var (id, zone) in _zones ?? new Dictionary<string, Zone>())
+            @foreach (var (id, zone) in (_zones ?? new Dictionary<string, Zone>()).Where(z => z.Key != "-1"))
             {
                 <option value="@id">@zone.Name</option>
             }
@@ -56,10 +56,10 @@
                         <th>Rarity</th>
                         <th>Type</th>
                         <th>Slot</th>
-                        <th>Requires</th>
-                        <th>Level</th>
-                        <th>Cost</th>
-                        <th>Zone</th>
+                        @* <th>Requires</th> *@
+                        @* <th>Level</th> *@
+                        @* <th>Cost</th> *@
+                        @* <th>Zone</th> *@
                     </tr>
                 </thead>
                 <tbody>
@@ -68,13 +68,13 @@
                         <tr>
                             <td>@item.Name</td>
                             <td>@item.Source</td>
-                            <td>@item.Rarity</td>
+                            <td style="color: @(item.GetColor())">@item.Rarity</td>
                             <td>@item.Type</td>
                             <td>@(item.Slot ?? string.Empty)</td>
-                            <td>@item.RequiresLevel</td>
-                            <td>@(item.ItemLevel > 0 ? item.ItemLevel : string.Empty)</td>
-                            <td>@item.Cost</td>
-                            <td>@_zones[item.ZoneId].Name</td>
+                            @* <td>@item.RequiresLevel</td> *@
+                            @* <td>@(item.ItemLevel > 0 ? item.ItemLevel : string.Empty)</td> *@
+                            @* <td>@item.Cost</td> *@
+                            @* <td>@_zones[item.ZoneId].Name</td> *@
                         </tr>
                     }
                 </tbody>
@@ -95,6 +95,8 @@
     ElementReference _mapRef;
     Coordinate _mousePosition = new();
 
+    [Parameter] public string ZoneName { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
         var options = new JsonSerializerOptions
@@ -110,13 +112,42 @@
         _itemsByZone = items.GroupBy(x => x.ZoneId).ToDictionary(group => group.Key, group => group.ToArray());
     }
 
-    private void OnChangeMap(ChangeEventArgs args)
+    protected override void OnParametersSet()
     {
-        _selectedMapLoaded = false;
+        if (string.IsNullOrWhiteSpace(ZoneName))
+        {
+            const string azerothId = "-1";
 
-        _selectedZoneId = args.Value.ToString();
+            _selectedZoneId = azerothId;
+
+            _selectedZoneItems = [];
+
+            return;
+        }
+
+        var name = ZoneName.Replace('_', ' ');
+
+        var zone = _zones.Values.FirstOrDefault(zone => zone.Name == name);
+
+        if (zone is null || string.IsNullOrWhiteSpace(zone.Name))
+        {
+            return;
+        }
+
+        _selectedZoneId = zone.Id;
 
         _selectedZoneItems = GetItems();
+    }
+
+    private void OnChangeMap(ChangeEventArgs args)
+    {
+        var id = args.Value.ToString();
+
+        var zone = _zones.First(zone => zone.Key == id).Value;
+
+        var name = zone.Name.Replace(' ', '_');
+
+        Navigation.NavigateTo($"/world-drops/{name}/");
     }
 
     private async Task OnMapLoaded()
@@ -156,13 +187,6 @@
     private void OnMouseLeaveMap()
     {
         _mousePosition = new();
-    }
-
-    private Coordinate GetItemCoordinates(Item item)
-    {
-        Console.WriteLine($"{item.Name} - X: {item.X} Y: {item.Y}");
-
-        return new(Math.Round((item.X * _mapRect.Width) / 100, 1), Math.Round((item.Y * _mapRect.Height) / 100, 1));
     }
 
     private string MapUrl => $"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg";

@@ -1,0 +1,320 @@
+[
+  {
+    "x": 51.3,
+    "y": 49.1,
+    "source": "Mysterious Hammer",
+    "zoneId": "45"
+  },
+  {
+    "x": 28.8,
+    "y": 59.7,
+    "source": "Fallen hammer",
+    "zoneId": "45"
+  },
+  {
+    "x": 70.1,
+    "y": 53.5,
+    "source": "Arcane Blade",
+    "zoneId": "45"
+  },
+  {
+    "x": 36.2,
+    "y": 57.3,
+    "source": "Offering",
+    "zoneId": "45"
+  },
+  {
+    "x": 42.5,
+    "y": 93.1,
+    "source": "Spell Inscribed Scroll",
+    "zoneId": "45"
+  },
+  {
+    "x": 26.9,
+    "y": 61,
+    "source": "Syndicate Spell Tome",
+    "zoneId": "45"
+  },
+  {
+    "x": 22.3,
+    "y": 58.7,
+    "source": "Stormguard",
+    "zoneId": "45"
+  },
+  {
+    "x": 28.9,
+    "y": 60.1,
+    "source": "Caretaker's Burden",
+    "zoneId": "45"
+  },
+  {
+    "x": 27.7,
+    "y": 56.7,
+    "source": "Peace of the Dead",
+    "zoneId": "45"
+  },
+  {
+    "x": 29.1,
+    "y": 61.5,
+    "source": "Syndicate Shanker",
+    "zoneId": "45"
+  },
+  {
+    "x": 26.2,
+    "y": 65.8,
+    "source": "Lordly Blade",
+    "zoneId": "45"
+  },
+  {
+    "x": 26.5,
+    "y": 64.4,
+    "source": "Thief's Stash",
+    "zoneId": "45"
+  },
+  {
+    "x": 17.8,
+    "y": 69.5,
+    "source": "Rather Large Ring",
+    "zoneId": "45"
+  },
+  {
+    "x": 29.6,
+    "y": 64.3,
+    "source": "Well Worn Hat",
+    "zoneId": "45"
+  },
+  {
+    "x": 31.1,
+    "y": 25.9,
+    "source": "Clothing Crate",
+    "zoneId": "45"
+  },
+  {
+    "x": 33.9,
+    "y": 27.1,
+    "source": "Handheld Persuasion Device",
+    "zoneId": "45"
+  },
+  {
+    "x": 56.5,
+    "y": 35.7,
+    "source": "Embedded Axe",
+    "zoneId": "45"
+  },
+  {
+    "x": 67.3,
+    "y": 80.3,
+    "source": "Witherbark Headsmasher",
+    "zoneId": "45"
+  },
+  {
+    "x": 70.9,
+    "y": 69.9,
+    "source": "Witherbark Totem",
+    "zoneId": "45"
+  },
+  {
+    "x": 66.7,
+    "y": 28.4,
+    "source": "Valuable Offering",
+    "zoneId": "45"
+  },
+  {
+    "x": 37.1,
+    "y": 45.2,
+    "source": "Fallen Adventurer's Mace",
+    "zoneId": "45"
+  },
+  {
+    "x": 31.1,
+    "y": 42.8,
+    "source": "Heat Tempered Sword",
+    "zoneId": "45"
+  },
+  {
+    "x": 31.4,
+    "y": 45.6,
+    "source": "Witherbark Cache",
+    "zoneId": "45"
+  },
+  {
+    "x": 25.9,
+    "y": 20,
+    "source": "Poacher's Bow",
+    "zoneId": "45"
+  },
+  {
+    "x": 48.7,
+    "y": 87.6,
+    "source": "Dark Iron Blaster",
+    "zoneId": "45"
+  },
+  {
+    "x": 44.3,
+    "y": 92.9,
+    "source": "Sunken Mace",
+    "zoneId": "45"
+  },
+  {
+    "x": 84,
+    "y": 27.9,
+    "source": "Shiny Kobold Treasure",
+    "zoneId": "45"
+  },
+  {
+    "x": 42.1,
+    "y": 61.1,
+    "source": "Warm Dry Pants",
+    "zoneId": "45"
+  },
+  {
+    "x": 48.7,
+    "y": 55.6,
+    "source": "Decayed Corpse",
+    "zoneId": "45"
+  },
+  {
+    "x": 46.5,
+    "y": 60.8,
+    "source": "Hidden Stash",
+    "zoneId": "45"
+  },
+  {
+    "x": 27,
+    "y": 66.3,
+    "source": "Safe Treasure No One Could Ever Reach",
+    "zoneId": "45"
+  },
+  {
+    "x": 52,
+    "y": 50.1,
+    "source": "Valuable Offering",
+    "zoneId": "45"
+  },
+  {
+    "x": 20.6,
+    "y": 46.6,
+    "source": "Intact Plate Helm",
+    "zoneId": "45"
+  },
+  {
+    "x": 20.6,
+    "y": 89.5,
+    "source": "Ancient Naga Trident",
+    "zoneId": "45"
+  },
+  {
+    "x": 21.1,
+    "y": 84.8,
+    "source": "Barnacle-Crusted Boarder's Axe",
+    "zoneId": "45"
+  },
+  {
+    "x": 35.8,
+    "y": 79.5,
+    "source": "Circle of Waves Idol",
+    "zoneId": "45"
+  },
+  {
+    "x": 62.8,
+    "y": 55.6,
+    "source": "Equipment Barrel",
+    "zoneId": "45"
+  },
+  {
+    "x": 28.3,
+    "y": 45.4,
+    "source": "Brumn's Discarded Project",
+    "zoneId": "45"
+  },
+  {
+    "x": 61.5,
+    "y": 64.3,
+    "source": "Muck Coated Pauldrons",
+    "zoneId": "45"
+  },
+  {
+    "x": 29.4,
+    "y": 53.5,
+    "source": "Abandoned Supplies",
+    "zoneId": "45"
+  },
+  {
+    "x": 61.6,
+    "y": 32.6,
+    "source": "Valuable Offering",
+    "zoneId": "45"
+  },
+  {
+    "x": 37.6,
+    "y": 21.6,
+    "source": "Climbing Boots",
+    "zoneId": "45"
+  },
+  {
+    "x": 42.9,
+    "y": 30.8,
+    "source": "Plains Bolter",
+    "zoneId": "45"
+  },
+  {
+    "x": 44.7,
+    "y": 74.8,
+    "source": "Waterproof Trunk",
+    "zoneId": "45"
+  },
+  {
+    "x": 64.3,
+    "y": 49.2,
+    "source": "Throwing Dagger",
+    "zoneId": "45"
+  },
+  {
+    "x": 55.8,
+    "y": 67.9,
+    "source": "Abandoned Camp Storage",
+    "zoneId": "45"
+  },
+  {
+    "x": 26,
+    "y": 31.3,
+    "source": "Valuable Offering",
+    "zoneId": "45"
+  },
+  {
+    "x": 62.4,
+    "y": 36.7,
+    "source": "Reverent of Earth",
+    "zoneId": "45"
+  },
+  {
+    "x": 17,
+    "y": 32.2,
+    "source": "Ancient Shield",
+    "zoneId": "45"
+  },
+  {
+    "x": 24.5,
+    "y": 20.4,
+    "source": "Syndicate Smokebomb",
+    "zoneId": "45"
+  },
+  {
+    "x": 21.5,
+    "y": 81.3,
+    "source": "Windwalker Totem",
+    "zoneId": "45"
+  },
+  {
+    "x": 59.2,
+    "y": 33.6,
+    "source": "Unstable Manastorm Portal",
+    "zoneId": "45"
+  },
+  {
+    "x": 90.3,
+    "y": 72.0,
+    "source": "Desperate Defense",
+    "zoneId": "45"
+  }
+]

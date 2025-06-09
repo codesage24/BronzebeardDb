@@ -6,8 +6,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* horizontal */
-    align-items: center; /* vertical */
+    justify-content: center;
+    align-items: center;
 }
 
 .pane {
@@ -19,7 +19,6 @@
 }
 
 select {
-    margin-bottom: 20px;
     color: var(--secondary-font-color);
     background-color: #1D1D1D;
     padding: 2px 10px 2px 2px;
@@ -27,6 +26,8 @@ select {
 }
 
 .wd-map {
+    min-height: 515px;
+    min-width: 772px;
 }
 
     .wd-map span {
@@ -38,7 +39,25 @@ select {
 
     .wd-map .pin {
         position: absolute;
+        width: 1px;
+        height: 1px;
+        font-size: 1px;
     }
+
+        .wd-map .pin a {
+            position: relative;
+            left: -12px;
+            top: -12px;
+            width: 24px;
+            height: 24px;
+            background: url(https://db.ascension.gg/static/images/Mapper/pin-yellow-new.png) no-repeat;
+            background-size: 24px;
+            display: block;
+        }
+
+            .wd-map .pin a:hover {
+                filter: brightness(2);
+            }
 
     .wd-map .map-name {
         font-size: 13px;
@@ -59,5 +78,9 @@ select {
     }
 
 .wd-table {
-    width: 50vw;
+    min-width: 812px;
+}
+
+.wd-table table {
+    margin-top: 20px;
 }
