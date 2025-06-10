@@ -1,5 +1,5 @@
-﻿@page "/BronzebeardDb/world-drops"
-@page "/BronzebeardDb/world-drops/{ZoneName}/"
+﻿@page "/world-drops"
+@page "/world-drops/{ZoneName}/"
 
 @using System.Text.Json
 @using System.Text.Json.Serialization
@@ -161,7 +161,7 @@
 
         var name = zone.Name.Replace(' ', '_');
 
-        Navigation.NavigateTo($"BronzebeardDb/world-drops/{name}/");
+        Navigation.NavigateTo($"world-drops/{name}/");
     }
 
     private async Task OnMapLoaded()
