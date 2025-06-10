@@ -52,7 +52,7 @@
             </div>
             
             <div class="col-sm-auto">
-                <button class="btn btn-dark" disabled="@true">Submit Drop</button>
+                <button class="btn btn-dark" @onclick="OpenModal">Submit Drop</button>
             </div>
         </div>
 
@@ -77,7 +77,7 @@
                         <tr>
                             <td>
                                 <div class="icon">
-                                    <ins style="background-image: url(@($"https://db.ascension.gg/static/images/wow/icons/medium/{(item.icon ?? "inv_misc_questionmark")}.jpg"))"></ins>
+                                    <ins style="background-image: url(@($"https://db.ascension.gg/static/images/wow/icons/medium/{(item.Icon ?? "inv_misc_questionmark")}.jpg"))"></ins>
                                 </div>
                             </td>
                             <td style="color: @(item.GetColor())"><a href="@($"https://db.ascension.gg/?item={item.Id}")" target="_blank">@item.Name</a></td>
@@ -95,18 +95,71 @@
     </div>
 </div>
 
+<Modal Model="_submission" Title="Submit Drop" Theme="dark-theme"
+       OnSaveClicked="HandleSave" CloseText="Cancel" SaveText="Submit"
+       @ref="_modal">
+    <div class="submission-modal">
+        @* Item Name *@
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Item</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Item" @bind="_submission.Item">
+        </div>
+        
+        @* Zone *@
+        <div class="input-field mb-3">
+            <select @bind="_submission.Zone">
+                <option value="">-- Select a Zone --</option>
+
+                @foreach (var (id, zone) in (_zones ?? new Dictionary<string, Zone>()).Where(z => z.Key != "-1"))
+                {
+                    <option value="@zone.Name">@zone.Name</option>
+                }
+            </select>
+        </div>
+        
+        @* Coordinates *@
+        <div class="coordinates">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">X</span>
+                </div>
+                <input type="text" class="form-control" @bind="_submission.X" />
+            </div>
+        
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Y</span>
+                </div>
+                <input type="text" class="form-control" @bind="_submission.Y" />
+            </div>
+        </div>
+        
+        @* Character Name *@
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Character</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Character" @bind="_submission.Character">
+        </div>
+    </div>
+</Modal>
+
 @code {
+    [Parameter] public string ZoneName { get; set; }
+
     bool _selectedMapLoaded;
     Item[] _selectedZoneItems = [];
     string _selectedZoneId = string.Empty;
-
     IDictionary<string, Zone> _zones;
 
     ElementRect _mapRect;
     ElementReference _mapRef;
     Coordinate _mousePosition = new();
 
-    [Parameter] public string ZoneName { get; set; }
+    Submission _submission = new();
+    Modal<Submission> _modal;
 
     readonly JsonSerializerOptions _jsonOptions = new()
     {
@@ -208,6 +261,33 @@
     }
 
     private string MapUrl => $"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg";
+
+    private async Task OpenModal()
+    {
+        _submission = new Submission();
+
+        await _modal.Open();
+    }
+
+    private Task HandleSave()
+    {
+        Console.WriteLine("Saved");
+
+        return Task.CompletedTask;
+    }
+
+    public class Submission
+    {
+        public string Item { get; set; }
+
+        public string Character { get; set; }
+
+        public string Zone { get; set; }
+
+        public double X { get; set; }
+
+        public double Y { get; set; }
+    }
 
     public record Coordinate(bool Over = false, double X = default, double Y = default);
 

@@ -1,0 +1,36 @@
+﻿.dark-theme {
+    color: var(--secondary-font-color);
+}
+
+    .dark-theme .modal-content {
+        border-radius: 5px;
+        background-color: #303030;
+    }
+
+    .dark-theme .modal-header {
+        color: white;
+        border-bottom: 1px solid #444;
+    }
+
+        .dark-theme .modal-header .btn-close {
+            filter: invert(1);
+        }
+
+    .dark-theme .modal-body {
+        background-color: #212529;
+    }
+
+    .dark-theme .modal-footer {
+        border-top: 1px solid #444;
+    }
+
+    .dark-theme .btn-primary {
+        background-color: var(--primary-font-color);
+        border-color: var(--primary-font-color);
+        color: black;
+    }
+
+    .dark-theme .btn-secondary {
+        background-color: #212529;
+        border-color: #212529;
+    }

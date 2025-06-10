@@ -1,20 +1,29 @@
 ﻿namespace BronzebeardDb.Models;
 
-public record Item
-(
-    string Id, 
-    string Name,
-    string Source,
-    Rarity Rarity,
-    string Type,
-    string icon,
-    int RequiresLevel,
-    int ItemLevel,
-    string Cost,
-    double X,
-    double Y
-)
+public class Item
 {
+    public string Id { get; set; }
+    
+    public string Name { get; set; }
+    
+    public string Source { get; set; }
+    
+    public Rarity Rarity { get; set; }
+    
+    public string Type { get; set; }
+    
+    public string Icon { get; set; }
+    
+    public int RequiresLevel { get; set; }
+    
+    public int ItemLevel { get; set; }
+    
+    public string Cost { get; set; }
+    
+    public double X { get; set; }
+    
+    public double Y { get; set; }
+
     public string Title => $"{Source} ({X}, {Y})";
 
     public string GetColor()

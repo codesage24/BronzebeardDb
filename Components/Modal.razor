@@ -1,0 +1,57 @@
+﻿@typeparam TModel where TModel : class, new()
+
+@inject IJSRuntime Js
+
+@if (IsVisible)
+{
+    <div class="modal fade show d-block @Theme" tabindex="-1" role="dialog" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@Title</h5>
+                    <button type="button" class="btn-close" @onclick="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @ChildContent
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" @onclick="OnSave">@SaveText</button>
+                    <button type="button" class="btn btn-secondary" @onclick="Close">@CloseText</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool IsVisible { get; set; }
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Theme { get; set; } = string.Empty;
+    [Parameter] public string CloseText { get; set; } = "Close";
+    [Parameter] public string SaveText { get; set; } = "Save";
+    [Parameter, EditorRequired] public TModel Model { get; set; }
+    [Parameter, EditorRequired] public RenderFragment ChildContent { get; set; }
+    [Parameter] public EventCallback OnSaveClicked { get; set; }
+    [Parameter] public EventCallback<bool> IsVisibleChanged { get; set; }
+
+    private async Task OnSave()
+    {
+        await OnSaveClicked.InvokeAsync();
+
+        await Close();
+    }
+
+    public async Task Open()
+    {
+        IsVisible = true;
+
+        await IsVisibleChanged.InvokeAsync(IsVisible);
+    }
+
+    public async Task Close()
+    {
+        IsVisible = false;
+
+        await IsVisibleChanged.InvokeAsync(IsVisible);
+    }
+}
