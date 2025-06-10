@@ -1,0 +1,207 @@
+[
+   {
+      "x":35,
+      "y":43.4,
+      "source":"Floating Barrel"
+   },
+   {
+      "x":35,
+      "y":54.5,
+      "source":"Ancient Statuette"
+   },
+   {
+      "x":46,
+      "y":29.6,
+      "source":"Cargo Box"
+   },
+   {
+      "x":46,
+      "y":29.6,
+      "source":"Old Crossbow"
+   },
+   {
+      "x":68,
+      "y":42.1,
+      "source":"Gunther's Lockbox"
+   },
+   {
+      "x":23.9,
+      "y":58,
+      "source":"Quivering Web"
+   },
+   {
+      "x":31.4,
+      "y":62.1,
+      "source":"Burial Wraps"
+   },
+   {
+      "x":31.8,
+      "y":61.5,
+      "source":"Stashed Goods"
+   },
+   {
+      "x":32.9,
+      "y":63,
+      "source":"Abandoned Hammer"
+   },
+   {
+      "x":33.5,
+      "y":59.2,
+      "source":"Rattlecage Cauldron"
+   },
+   {
+      "x":36.2,
+      "y":61.8,
+      "source":"Abandoned Bag"
+   },
+   {
+      "x":37.6,
+      "y":67.9,
+      "source":"Scarlet Shield"
+   },
+   {
+      "x":37.9,
+      "y":50.1,
+      "source":"Old Family Broom"
+   },
+   {
+      "x":43.9,
+      "y":39.4,
+      "source":"Flickering Lantern"
+   },
+   {
+      "x":44.3,
+      "y":65,
+      "source":"Forgotten Shovel"
+   },
+   {
+      "x":49.5,
+      "y":52,
+      "source":"Waterlogged Crate"
+   },
+   {
+      "x":49.6,
+      "y":36.3,
+      "source":"Agamand Dresser"
+   },
+   {
+      "x":49.8,
+      "y":43.4,
+      "source":"Broken Rattlecage"
+   },
+   {
+      "x":51.2,
+      "y":67.9,
+      "source":"Old Insignia"
+   },
+   {
+      "x":52.9,
+      "y":26.4,
+      "source":"Agamand Walking Stick"
+   },
+   {
+      "x":53.2,
+      "y":57.8,
+      "source":"Wheel"
+   },
+   {
+      "x":55.1,
+      "y":42.7,
+      "source":"Unearthed Ring"
+   },
+   {
+      "x":56.6,
+      "y":49.9,
+      "source":"Shallow Grave"
+   },
+   {
+      "x":58.1,
+      "y":33.3,
+      "source":"Garren's Pitchfork"
+   },
+   {
+      "x":58.8,
+      "y":30.7,
+      "source":"Rusty Shotgun"
+   },
+   {
+      "x":59.7,
+      "y":48.2,
+      "source":"Ulag's Other Cleaver"
+   },
+   {
+      "x":61.3,
+      "y":27.4,
+      "source":"Shoddy Blade"
+   },
+   {
+      "x":65.7,
+      "y":59.6,
+      "source":"Forsaken Cart Crate"
+   },
+   {
+      "x":65.9,
+      "y":68.4,
+      "source":"Mysterious Curse"
+   },
+   {
+      "x":66.7,
+      "y":44.9,
+      "source":"Butchery Blade"
+   },
+   {
+      "x":67.4,
+      "y":25.5,
+      "source":"Coastline Crate"
+   },
+   {
+      "x":69.4,
+      "y":50.9,
+      "source":"Barnaby's Booties"
+   },
+   {
+      "x":70.6,
+      "y":64.2,
+      "source":"Offering For the Dead"
+   },
+   {
+      "x":72.8,
+      "y":25.7,
+      "source":"Murloc Plunder"
+   },
+   {
+      "x":75.2,
+      "y":72.2,
+      "source":"Edwin's Chest"
+   },
+   {
+      "x":78.7,
+      "y":59.5,
+      "source":"Ceremonial Mace"
+   },
+   {
+      "x":78.9,
+      "y":41,
+      "source":"Holy Rune"
+   },
+   {
+      "x":79.6,
+      "y":25.1,
+      "source":"Captain's Shield"
+   },
+   {
+      "x":83.5,
+      "y":30.3,
+      "source":"Mysterious Cache"
+   },
+   {
+      "x":86.5,
+      "y":33.9,
+      "source":"Scarlet Tome"
+   },
+   {
+      "x":87.7,
+      "y":51.2,
+      "source":"Nightweb Spider Egg"
+   }
+]

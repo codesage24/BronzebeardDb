@@ -1,0 +1,322 @@
+[
+   {
+      "x":65.1,
+      "y":52,
+      "source":"Mysterious Sunlight Well"
+   },
+   {
+      "x":51.8,
+      "y":27.6,
+      "source":"Mysterious Bone Pile"
+   },
+   {
+      "x":67.3,
+      "y":49.8,
+      "source":"Mysterious Globe"
+   },
+   {
+      "x":52.5,
+      "y":27.9,
+      "source":"Donation Box"
+   },
+   {
+      "x":57.3,
+      "y":91.5,
+      "source":"gnome screw"
+   },
+   {
+      "x":40.4,
+      "y":28.7,
+      "source":"Zazera's Wand"
+   },
+   {
+      "x":25.5,
+      "y":54.3,
+      "source":"Hidden Cache"
+   },
+   {
+      "x":50.3,
+      "y":84.8,
+      "source":"Lost Southsea Loot"
+   },
+   {
+      "x":70.1,
+      "y":51.7,
+      "source":"Goblin Cache"
+   },
+   {
+      "x":34.7,
+      "y":23.2,
+      "source":"Warlord's Blade"
+   },
+   {
+      "x":63.9,
+      "y":52.2,
+      "source":"Time Stream Slasher"
+   },
+   {
+      "x":63.4,
+      "y":48,
+      "source":"Ancient Horde Blade"
+   },
+   {
+      "x":58.7,
+      "y":39.3,
+      "source":"Alchemist Cache"
+   },
+   {
+      "x":56,
+      "y":34.4,
+      "source":"Betrayer's Blade"
+   },
+   {
+      "x":44.3,
+      "y":39.7,
+      "source":"Dead Adventurer"
+   },
+   {
+      "x":49.4,
+      "y":36,
+      "source":"Deadman Gauntlets"
+   },
+   {
+      "x":33.5,
+      "y":59.9,
+      "source":"Disturbed Sand"
+   },
+   {
+      "x":38.1,
+      "y":67.5,
+      "source":"Sand Cover"
+   },
+   {
+      "x":37.8,
+      "y":81.5,
+      "source":"Watcher's Mantle"
+   },
+   {
+      "x":24.7,
+      "y":83.1,
+      "source":"Lost Treasure"
+   },
+   {
+      "x":29.2,
+      "y":65.1,
+      "source":"Tender's Hat"
+   },
+   {
+      "x":30.4,
+      "y":74.2,
+      "source":"Zepplin Crate"
+   },
+   {
+      "x":31.7,
+      "y":44.8,
+      "source":"Ritual Horn"
+   },
+   {
+      "x":34.7,
+      "y":39.7,
+      "source":"Qiraji-Touched Tool"
+   },
+   {
+      "x":40.6,
+      "y":40.6,
+      "source":"Sturdy Coffin Lid"
+   },
+   {
+      "x":41.2,
+      "y":54.4,
+      "source":"Damp Ring"
+   },
+   {
+      "x":38.8,
+      "y":52.2,
+      "source":"Dunemaul Crate"
+   },
+   {
+      "x":47.1,
+      "y":65,
+      "source":"Disturbed Sand Pile"
+   },
+   {
+      "x":50.3,
+      "y":69.5,
+      "source":"Carapace Carver"
+   },
+   {
+      "x":58.3,
+      "y":69.1,
+      "source":"Hazzali Silithid Antenna"
+   },
+   {
+      "x":54.6,
+      "y":72.5,
+      "source":"Last Stand"
+   },
+   {
+      "x":55.9,
+      "y":77.3,
+      "source":"Odd Silithid Larva"
+   },
+   {
+      "x":59.5,
+      "y":62,
+      "source":"Ancient Wagon Wheel"
+   },
+   {
+      "x":48.9,
+      "y":53.4,
+      "source":"Sun Ritual Necklace"
+   },
+   {
+      "x":54.3,
+      "y":53.6,
+      "source":"Abandoned Trader Crate"
+   },
+   {
+      "x":55.4,
+      "y":90.7,
+      "source":"Ancient Elven Chest"
+   },
+   {
+      "x":57.3,
+      "y":91.5,
+      "source":"The Wingman"
+   },
+   {
+      "x":63,
+      "y":71.3,
+      "source":"Loose Barrel"
+   },
+   {
+      "x":66.1,
+      "y":64,
+      "source":"Winkey's Misplaced Wrench"
+   },
+   {
+      "x":70.3,
+      "y":50.2,
+      "source":"Water Binder"
+   },
+   {
+      "x":76.2,
+      "y":45.2,
+      "source":"Southsea Chest"
+   },
+   {
+      "x":75.9,
+      "y":45.8,
+      "source":"Pilfered Backpack"
+   },
+   {
+      "x":74.4,
+      "y":47.7,
+      "source":"Wooden Plank"
+   },
+   {
+      "x":72.1,
+      "y":46.5,
+      "source":"Captain's Compass"
+   },
+   {
+      "x":71.1,
+      "y":45.8,
+      "source":"Pilfered Crate"
+   },
+   {
+      "x":68.3,
+      "y":42.8,
+      "source":"Shallow Grave"
+   },
+   {
+      "x":68.4,
+      "y":23,
+      "source":"Fisher's Misfortune"
+   },
+   {
+      "x":65.2,
+      "y":18.5,
+      "source":"Magnify Glass"
+   },
+   {
+      "x":60,
+      "y":23,
+      "source":"Noon's Shade Relic"
+   },
+   {
+      "x":53.1,
+      "y":33.3,
+      "source":"Desert Cache"
+   },
+   {
+      "x":41.3,
+      "y":57.9,
+      "source":"Dunemaul Champion Hammer"
+   },
+   {
+      "x":48.2,
+      "y":25.4,
+      "source":"Stylish Racing Hat"
+   },
+   {
+      "x":40,
+      "y":29,
+      "source":"Sandfury Ritual Mace"
+   },
+   {
+      "x":36.7,
+      "y":24.6,
+      "source":"Sandfury Boomerang"
+   },
+   {
+      "x":42.5,
+      "y":23.1,
+      "source":"Sorrow Bolter"
+   },
+   {
+      "x":41.5,
+      "y":73.7,
+      "source":"Southmoon Amulet"
+   },
+   {
+      "x":53.7,
+      "y":47.4,
+      "source":"Buried Wood"
+   },
+   {
+      "x":64,
+      "y":40.1,
+      "source":"Stolen Caravan Crate"
+   },
+   {
+      "x":66.4,
+      "y":24.8,
+      "source":"High Seas Axe"
+   },
+   {
+      "x":42.9,
+      "y":48.9,
+      "source":"Unfortunate Shoulderpad"
+   },
+   {
+      "x":54.5,
+      "y":28.5,
+      "source":"Executioner's Axe"
+   },
+   {
+      "x":30.7,
+      "y":78.3,
+      "source":"Dunecaller's Spire"
+   },
+   {
+      "x":50.3,
+      "y":84.8,
+      "source":"Buried Artifact"
+   },
+   {
+      "x":74.6,
+      "y":49.4,
+      "source":"Unstable Manastorm Portal"
+   }
+]

@@ -1,0 +1,472 @@
+[
+   {
+      "x":30.4,
+      "y":32.3,
+      "source":"Mysterious Pirate Cache"
+   },
+   {
+      "x":52.4,
+      "y":28.2,
+      "source":"Mysterious Cauldron"
+   },
+   {
+      "x":39.6,
+      "y":16.4,
+      "source":"Tool Bucket"
+   },
+   {
+      "x":43.1,
+      "y":-1.5,
+      "source":"Defias Night Blade Blade"
+   },
+   {
+      "x":37.2,
+      "y":1.1,
+      "source":"Vul'Gol Torch "
+   },
+   {
+      "x":27,
+      "y":83,
+      "source":"Hull Breaker"
+   },
+   {
+      "x":29.2,
+      "y":88.3,
+      "source":"Pirate Sabre"
+   },
+   {
+      "x":30.7,
+      "y":89.3,
+      "source":"Cannon Master's Belongings"
+   },
+   {
+      "x":33.7,
+      "y":86.8,
+      "source":"Bloodsail Decksweeper"
+   },
+   {
+      "x":38.4,
+      "y":80.5,
+      "source":"Tanning Rack"
+   },
+   {
+      "x":35,
+      "y":60.9,
+      "source":"Baby Gorilla Bait"
+   },
+   {
+      "x":39.2,
+      "y":58.6,
+      "source":"Stolen Armor Shipment"
+   },
+   {
+      "x":25.7,
+      "y":85.8,
+      "source":"Pirate's Lost Axe"
+   },
+   {
+      "x":32.5,
+      "y":81.9,
+      "source":"Brilliant Shell"
+   },
+   {
+      "x":27.3,
+      "y":69.6,
+      "source":"Buccaneer's Shiv"
+   },
+   {
+      "x":28.2,
+      "y":64.7,
+      "source":"Well Used Trident"
+   },
+   {
+      "x":28.5,
+      "y":58.9,
+      "source":"Dead Explorer's Pack"
+   },
+   {
+      "x":24.6,
+      "y":58.8,
+      "source":"Murdered Fisherman"
+   },
+   {
+      "x":22.9,
+      "y":49.2,
+      "source":"Razorsharp Tooth"
+   },
+   {
+      "x":24.6,
+      "y":54.1,
+      "source":"Strange Book"
+   },
+   {
+      "x":28.7,
+      "y":44.7,
+      "source":"Pristine Feather"
+   },
+   {
+      "x":31.6,
+      "y":42.9,
+      "source":"Voodoo Bonemaker"
+   },
+   {
+      "x":42.1,
+      "y":84.8,
+      "source":"Half Buried Shipment"
+   },
+   {
+      "x":37.2,
+      "y":31,
+      "source":"Witchdoctor Effigy"
+   },
+   {
+      "x":35.2,
+      "y":23.7,
+      "source":"Glinting Silt-Encrusted Necklace"
+   },
+   {
+      "x":32.4,
+      "y":17.1,
+      "source":"Gore Coated Pauldrons"
+   },
+   {
+      "x":29.9,
+      "y":19,
+      "source":"Bloodscalper"
+   },
+   {
+      "x":26.1,
+      "y":12.4,
+      "source":"Death Trophy"
+   },
+   {
+      "x":13.4,
+      "y":15.1,
+      "source":"Yojamba Hex Skull"
+   },
+   {
+      "x":21.9,
+      "y":24.9,
+      "source":"Unstable Water Lodestone"
+   },
+   {
+      "x":23.4,
+      "y":8.1,
+      "source":"Zul'Kunda Blood Ring"
+   },
+   {
+      "x":25.3,
+      "y":8.2,
+      "source":"Drowned Man's Necklace"
+   },
+   {
+      "x":24.3,
+      "y":12.9,
+      "source":"Scout's Stash"
+   },
+   {
+      "x":24.8,
+      "y":9.7,
+      "source":"Bloodscalp Bow"
+   },
+   {
+      "x":35.4,
+      "y":9.7,
+      "source":"Left Behind Boots"
+   },
+   {
+      "x":38.3,
+      "y":9,
+      "source":"Riverheart Crest"
+   },
+   {
+      "x":43.7,
+      "y":9.4,
+      "source":"Kurzen Medicine Compendium"
+   },
+   {
+      "x":44.8,
+      "y":11.7,
+      "source":"Heavy Jungle Chopper"
+   },
+   {
+      "x":45.9,
+      "y":9.7,
+      "source":"The Wrangler"
+   },
+   {
+      "x":47.3,
+      "y":5.4,
+      "source":"Kurzen Officer's Trunk"
+   },
+   {
+      "x":49.9,
+      "y":4,
+      "source":"Kurzen Eviscerator"
+   },
+   {
+      "x":48.6,
+      "y":15.5,
+      "source":"Crystallized Shield"
+   },
+   {
+      "x":43.9,
+      "y":18.3,
+      "source":"Venture Co. Gear"
+   },
+   {
+      "x":43.3,
+      "y":19.2,
+      "source":"Splinter Guard"
+   },
+   {
+      "x":42.3,
+      "y":18.6,
+      "source":"Loose Gear"
+   },
+   {
+      "x":50.4,
+      "y":30.5,
+      "source":"Fifth Staff of Mosh'Ogg Circle"
+   },
+   {
+      "x":53,
+      "y":27.6,
+      "source":"Mai'Zoth's Artifact"
+   },
+   {
+      "x":49.3,
+      "y":27.2,
+      "source":"Mosh'Ogg Protection Totem"
+   },
+   {
+      "x":47.8,
+      "y":40.2,
+      "source":"Skullsplitter Crossbow"
+   },
+   {
+      "x":44.3,
+      "y":45.2,
+      "source":"Ritual Tome"
+   },
+   {
+      "x":40.4,
+      "y":49.1,
+      "source":"Encased Amulet"
+   },
+   {
+      "x":41.5,
+      "y":50.9,
+      "source":"Abandoned Supplies"
+   },
+   {
+      "x":43.8,
+      "y":48,
+      "source":"The Ironjaw"
+   },
+   {
+      "x":42.3,
+      "y":48.5,
+      "source":"Stonesplitter"
+   },
+   {
+      "x":30.3,
+      "y":48.9,
+      "source":"Fallen Gladiator's Shield"
+   },
+   {
+      "x":34.9,
+      "y":51.8,
+      "source":"Suspiciously Cool Amulet"
+   },
+   {
+      "x":33.5,
+      "y":88.4,
+      "source":"Black Powder Sack"
+   },
+   {
+      "x":36.5,
+      "y":34.2,
+      "source":"Tribal Runners"
+   },
+   {
+      "x":37.9,
+      "y":37.4,
+      "source":"Clawed Up Bag"
+   },
+   {
+      "x":41.8,
+      "y":35.6,
+      "source":"Dead Druid's Relic"
+   },
+   {
+      "x":48.8,
+      "y":18.6,
+      "source":"Gurubashi Throwing Axe"
+   },
+   {
+      "x":39.7,
+      "y":84.5,
+      "source":"Horn of the Stampede"
+   },
+   {
+      "x":45.9,
+      "y":9.5,
+      "source":"Kurzen Training Device"
+   },
+   {
+      "x":45.8,
+      "y":8.3,
+      "source":"Shiv of Warm Greetings"
+   },
+   {
+      "x":37.5,
+      "y":1.7,
+      "source":"Fallen Warrior's Axe"
+   },
+   {
+      "x":30.8,
+      "y":23.6,
+      "source":"Unfired Rifle"
+   },
+   {
+      "x":42.1,
+      "y":44.8,
+      "source":"Venture Co Supplies"
+   },
+   {
+      "x":32,
+      "y":54.3,
+      "source":"Bloodsail Longbow"
+   },
+   {
+      "x":31.4,
+      "y":13,
+      "source":"Tattered Goblin Cargo Sack"
+   },
+   {
+      "x":47.2,
+      "y":8.6,
+      "source":"Gorilla Trap"
+   },
+   {
+      "x":32.8,
+      "y":71.7,
+      "source":"Raided Cadaver"
+   },
+   {
+      "x":46.3,
+      "y":28.2,
+      "source":"Strange Jungle Shrine"
+   },
+   {
+      "x":48,
+      "y":38.2,
+      "source":"Finished Fur Cloak"
+   },
+   {
+      "x":27.9,
+      "y":15.2,
+      "source":"Panther Claw"
+   },
+   {
+      "x":32.3,
+      "y":37.5,
+      "source":"Jungle Stalker Pauldrons"
+   },
+   {
+      "x":46.3,
+      "y":28.2,
+      "source":"Ring of the Jungle"
+   },
+   {
+      "x":36.1,
+      "y":69.1,
+      "source":"Gorlash's Stash"
+   },
+   {
+      "x":35.1,
+      "y":78.7,
+      "source":"Overboard Treasure"
+   },
+   {
+      "x":23.5,
+      "y":71.8,
+      "source":"Mokrash's Ring"
+   },
+   {
+      "x":37.1,
+      "y":14,
+      "source":"Jungle Defender"
+   },
+   {
+      "x":38.7,
+      "y":4.4,
+      "source":"Rugged Leather Runners"
+   },
+   {
+      "x":37.9,
+      "y":61.7,
+      "source":"Ladel"
+   },
+   {
+      "x":46.1,
+      "y":11,
+      "source":"Humming Blade"
+   },
+   {
+      "x":39.6,
+      "y":16.7,
+      "source":"Dangerously Loose Machine Part"
+   },
+   {
+      "x":28.2,
+      "y":38.6,
+      "source":"Charm"
+   },
+   {
+      "x":42,
+      "y":30.7,
+      "source":"Lazy Hat"
+   },
+   {
+      "x":44.8,
+      "y":23.5,
+      "source":"Beating Heart"
+   },
+   {
+      "x":46.1,
+      "y":11,
+      "source":"Shimmer Dust"
+   },
+   {
+      "x":48.1,
+      "y":44.3,
+      "source":"Demonic Skull"
+   },
+   {
+      "x":35,
+      "y":7,
+      "source":"Unstable Manastorm Portal"
+   },
+   {
+      "x":34.1,
+      "y":49.3,
+      "source":"Smashed Shield"
+   },
+   {
+      "x":29.9,
+      "y":47.4,
+      "source":"Mysterious Cache"
+   },
+   {
+      "x":37.3,
+      "y":36.7,
+      "source":"Mysterious Cache"
+   },
+   {
+      "x":25,
+      "y":8,
+      "source":"Mysterious Cache"
+   }
+]

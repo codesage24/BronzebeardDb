@@ -1,0 +1,142 @@
+[
+   {
+      "x":69.1,
+      "y":29.9,
+      "source":"Mysterious Orb"
+   },
+   {
+      "x":52.3,
+      "y":5.3,
+      "source":"Cracked Hearthstone of the Fallen"
+   },
+   {
+      "x":58.5,
+      "y":50.8,
+      "source":"Portal Fragment"
+   },
+   {
+      "x":43.4,
+      "y":27.8,
+      "source":"Lost One Satchel"
+   },
+   {
+      "x":50.4,
+      "y":14,
+      "source":"Bloodmage Coil"
+   },
+   {
+      "x":47.6,
+      "y":29.7,
+      "source":"Ritual Darkened Blade"
+   },
+   {
+      "x":54,
+      "y":12,
+      "source":"Nethergarde Crate"
+   },
+   {
+      "x":57.3,
+      "y":25.9,
+      "source":"Old Crate"
+   },
+   {
+      "x":44.3,
+      "y":12.2,
+      "source":"Dreadmaul Supplies"
+   },
+   {
+      "x":55.1,
+      "y":39.6,
+      "source":"Rusted Shoulderplate"
+   },
+   {
+      "x":47.9,
+      "y":43.4,
+      "source":"Ogre Mace"
+   },
+   {
+      "x":51.2,
+      "y":55.5,
+      "source":"Half-Buried Dagger"
+   },
+   {
+      "x":52,
+      "y":35.8,
+      "source":"Kum'isha's Supply Chest"
+   },
+   {
+      "x":65,
+      "y":33.6,
+      "source":"Skeletal Claw"
+   },
+   {
+      "x":68,
+      "y":28.8,
+      "source":"Shadowsworn Staff"
+   },
+   {
+      "x":57.4,
+      "y":54.8,
+      "source":"Sharpened Axe"
+   },
+   {
+      "x":59.4,
+      "y":56.2,
+      "source":"Magical Staff"
+   },
+   {
+      "x":45.4,
+      "y":16.3,
+      "source":"Mojo's Chest"
+   },
+   {
+      "x":43.1,
+      "y":42,
+      "source":"Shadowsworn Chest"
+   },
+   {
+      "x":64.3,
+      "y":46.9,
+      "source":"Empowered Scythe"
+   },
+   {
+      "x":39,
+      "y":32,
+      "source":"Sacrificial Knife"
+   },
+   {
+      "x":34,
+      "y":50,
+      "source":"Skewered Doll"
+   },
+   {
+      "x":51.6,
+      "y":48.5,
+      "source":"Glowing Gem"
+   },
+   {
+      "x":44.5,
+      "y":55.2,
+      "source":"Smoldering Boots"
+   },
+   {
+      "x":36.8,
+      "y":74.7,
+      "source":"Ominous Sword"
+   },
+   {
+      "x":47.8,
+      "y":53.2,
+      "source":"Corrupted Rifle"
+   },
+   {
+      "x":55.5,
+      "y":32.4,
+      "source":"Cracked Bow"
+   },
+   {
+      "x":39.9,
+      "y":32.1,
+      "source":"Demonic Crystal"
+   }
+]

@@ -1,0 +1,252 @@
+[
+   {
+      "x":26,
+      "y":73.5,
+      "source":"Quel'Thalas Sunken Treasure Chest"
+   },
+   {
+      "x":36,
+      "y":36.5,
+      "source":"Westfall Supply Cache"
+   },
+   {
+      "x":46,
+      "y":19,
+      "source":"People's Militia Stolen Badge"
+   },
+   {
+      "x":46,
+      "y":38.8,
+      "source":"Sharpened Chopper"
+   },
+   {
+      "x":57,
+      "y":80.5,
+      "source":"Dirt Covered Sword"
+   },
+   {
+      "x":70,
+      "y":74.7,
+      "source":"Klaven's Wardrobe"
+   },
+   {
+      "x":23.4,
+      "y":41.9,
+      "source":"Loosely Packed Dirt"
+   },
+   {
+      "x":25.4,
+      "y":16,
+      "source":"Fisherman's Last Wish"
+   },
+   {
+      "x":27.9,
+      "y":60,
+      "source":"Salvaged Goods"
+   },
+   {
+      "x":29.2,
+      "y":49.5,
+      "source":"Peculiar Gold Nugget"
+   },
+   {
+      "x":29.5,
+      "y":27,
+      "source":"Quel'Thalas Sunken Treasure Chest"
+   },
+   {
+      "x":31.1,
+      "y":44.1,
+      "source":"Quarry Sledge"
+   },
+   {
+      "x":33.6,
+      "y":86.5,
+      "source":"Quel'Thalas Sunken Treasure Chest"
+   },
+   {
+      "x":34.2,
+      "y":16.4,
+      "source":"Waterlogged Trunk"
+   },
+   {
+      "x":34.5,
+      "y":15.7,
+      "source":"Quel'Thalas Sunken Treasure Chest"
+   },
+   {
+      "x":35.7,
+      "y":90.3,
+      "source":"Rower's Footlocker"
+   },
+   {
+      "x":38.6,
+      "y":57.9,
+      "source":"Defias Magus Staff"
+   },
+   {
+      "x":40.1,
+      "y":67.9,
+      "source":"Defias Remains"
+   },
+   {
+      "x":41.1,
+      "y":47.6,
+      "source":"Stashed Goods"
+   },
+   {
+      "x":41.4,
+      "y":66.4,
+      "source":"Defias Rusty Gun Rack"
+   },
+   {
+      "x":41.7,
+      "y":29.3,
+      "source":"Heavy Bone"
+   },
+   {
+      "x":42.9,
+      "y":72.8,
+      "source":"Defias Mage Stash"
+   },
+   {
+      "x":42.9,
+      "y":88.5,
+      "source":"People's Militia Armaments"
+   },
+   {
+      "x":43.8,
+      "y":66.5,
+      "source":"Sack of Defias Gear"
+   },
+   {
+      "x":44.5,
+      "y":23.8,
+      "source":"Unstable Manastorm Portal"
+   },
+   {
+      "x":44.7,
+      "y":14,
+      "source":"Gnoll Cleaver"
+   },
+   {
+      "x":46.3,
+      "y":59,
+      "source":"Heavy Stompers"
+   },
+   {
+      "x":46.8,
+      "y":19.4,
+      "source":"Mysterious Lantern"
+   },
+   {
+      "x":47.9,
+      "y":46.7,
+      "source":"Defias Toe Knife"
+   },
+   {
+      "x":48.5,
+      "y":20.2,
+      "source":"Storage Crate"
+   },
+   {
+      "x":50.5,
+      "y":7.7,
+      "source":"Quel'Thalas Sunken Treasure Chest"
+   },
+   {
+      "x":51.4,
+      "y":40.1,
+      "source":"Defias Throwing Knife"
+   },
+   {
+      "x":51.4,
+      "y":40.2,
+      "source":"Knife Prop"
+   },
+   {
+      "x":52.8,
+      "y":53.2,
+      "source":"Travel Sack"
+   },
+   {
+      "x":53.2,
+      "y":79.1,
+      "source":"Stolen Brew"
+   },
+   {
+      "x":56.3,
+      "y":30.6,
+      "source":"Unlocked Chest"
+   },
+   {
+      "x":56.4,
+      "y":19.2,
+      "source":"Liquid Arcane"
+   },
+   {
+      "x":56.4,
+      "y":30.2,
+      "source":"Salma's Summer Wardrobe"
+   },
+   {
+      "x":56.7,
+      "y":47.5,
+      "source":"Sentinel's Blade"
+   },
+   {
+      "x":56.8,
+      "y":67,
+      "source":"Stolen Supplies"
+   },
+   {
+      "x":58.9,
+      "y":43.3,
+      "source":"Charred Strongbox"
+   },
+   {
+      "x":58.9,
+      "y":43.3,
+      "source":"Dirt Prop"
+   },
+   {
+      "x":59.3,
+      "y":5.6,
+      "source":"Thunder Falls Enchanted Branches"
+   },
+   {
+      "x":59.3,
+      "y":5.6,
+      "source":"Magic Circle Visual"
+   },
+   {
+      "x":59.9,
+      "y":18.5,
+      "source":"Field Boots"
+   },
+   {
+      "x":60.8,
+      "y":58.2,
+      "source":"Defias Handshake"
+   },
+   {
+      "x":63.2,
+      "y":21.3,
+      "source":"Forgotten Shipment"
+   },
+   {
+      "x":66.6,
+      "y":30.8,
+      "source":"Riverpaw Pack Chieftain's Lunch"
+   },
+   {
+      "x":71.5,
+      "y":73.9,
+      "source":"Madness Cursed Notes"
+   },
+   {
+      "x":73.5,
+      "y":65.2,
+      "source":"Spider Ichor Sample"
+   }
+]

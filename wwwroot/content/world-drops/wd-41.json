@@ -1,0 +1,177 @@
+[
+   {
+      "x":53,
+      "y":92.5,
+      "source":"Brewing Instructions"
+   },
+   {
+      "x":31.8,
+      "y":24,
+      "source":"Blessing of the Unknown Soldier Spirit"
+   },
+   {
+      "x":35.5,
+      "y":35.1,
+      "source":"Dark Scythe"
+   },
+   {
+      "x":36.3,
+      "y":69.8,
+      "source":"Necklace of the Faithful"
+   },
+   {
+      "x":36.8,
+      "y":66.7,
+      "source":"Ring of the Faithful"
+   },
+   {
+      "x":37.8,
+      "y":30.5,
+      "source":"Foreboding Banner"
+   },
+   {
+      "x":39.8,
+      "y":72,
+      "source":"Forgotten Bones"
+   },
+   {
+      "x":39.8,
+      "y":71.9,
+      "source":"Fallen Hero's Shield"
+   },
+   {
+      "x":40.7,
+      "y":79.1,
+      "source":"Lost Tome"
+   },
+   {
+      "x":40.8,
+      "y":79.5,
+      "source":"Forgotten Journal"
+   },
+   {
+      "x":41.1,
+      "y":63.9,
+      "source":"Ancient Formula"
+   },
+   {
+      "x":41.3,
+      "y":79.2,
+      "source":"Mysterious Goblet"
+   },
+   {
+      "x":41.5,
+      "y":62.8,
+      "source":"Mystic Power Crystal"
+   },
+   {
+      "x":42.2,
+      "y":64.1,
+      "source":"Prophetic Tome"
+   },
+   {
+      "x":42.9,
+      "y":45.5,
+      "source":"Fallen Traveler's Pauldrons"
+   },
+   {
+      "x":43.2,
+      "y":29.3,
+      "source":"Coalescence of Agony"
+   },
+   {
+      "x":43.8,
+      "y":79.3,
+      "source":"Otherworldly Stone"
+   },
+   {
+      "x":45.1,
+      "y":77.1,
+      "source":"Bag of Folding"
+   },
+   {
+      "x":47.5,
+      "y":32.7,
+      "source":"Forgotten Grave"
+   },
+   {
+      "x":47.9,
+      "y":67.9,
+      "source":"Old Book"
+   },
+   {
+      "x":48.3,
+      "y":25.1,
+      "source":"Cursed Branch"
+   },
+   {
+      "x":48.5,
+      "y":69.5,
+      "source":"Old Book"
+   },
+   {
+      "x":48.6,
+      "y":67.7,
+      "source":"Old Book"
+   },
+   {
+      "x":48.7,
+      "y":78,
+      "source":"Intact Boots"
+   },
+   {
+      "x":48.8,
+      "y":68.1,
+      "source":"Old Book"
+   },
+   {
+      "x":50.1,
+      "y":75.1,
+      "source":"Fallen Rod"
+   },
+   {
+      "x":51.1,
+      "y":78,
+      "source":"Forgotten Amulet"
+   },
+   {
+      "x":52.1,
+      "y":34,
+      "source":"Long-Abandoned Circlet"
+   },
+   {
+      "x":52.2,
+      "y":61.3,
+      "source":"Ogre Supplies"
+   },
+   {
+      "x":53.2,
+      "y":72.9,
+      "source":"Forgotten Flower"
+   },
+   {
+      "x":53.5,
+      "y":72.9,
+      "source":"Memento Ring"
+   },
+   {
+      "x":54.2,
+      "y":55.6,
+      "source":"Ogrish Handaxe"
+   },
+   {
+      "x":55.2,
+      "y":73,
+      "source":"Wine Bottle"
+   },
+   {
+      "x":56.4,
+      "y":81.5,
+      "source":"Cellar Rubble"
+   },
+   {
+      "x":64.9,
+      "y":74.2,
+      "source":"Blood-soaked Bag"
+   }
+]

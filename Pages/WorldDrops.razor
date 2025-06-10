@@ -16,7 +16,7 @@
     <div class="pane wd-map">
         @if (!string.IsNullOrWhiteSpace(_selectedZoneId))
         {
-            <img src="@MapUrl" style="display:none" @onload="@OnMapLoaded" />
+            <img src="@MapUrl" style="display:none" @onload="@OnMapLoaded" alt="map" />
             <span style="background: url(@MapUrl)" @onmousemove="OnMouseMoveMap" @onmouseleave="OnMouseLeaveMap" @ref="_mapRef">
 
                 @foreach (var item in (_selectedMapLoaded ? _selectedZoneItems : []))
@@ -28,7 +28,7 @@
 
                 <div class="map-name">@(_zones[_selectedZoneId].Name)</div>
 
-                @if (_mousePosition.X != default || _mousePosition.Y != default)
+                @if (_mousePosition.Over)
                 {
                     <div class="map-coordinates">(@_mousePosition.X.ToString("#0.0"), @_mousePosition.Y.ToString("#0.0"))</div>
                 }
@@ -116,9 +116,9 @@
     {
         if (string.IsNullOrWhiteSpace(ZoneName))
         {
-            const string azerothId = "-1";
+            const string defaultMapId = "-1"; // map of Azeroth
 
-            _selectedZoneId = azerothId;
+            _selectedZoneId = defaultMapId;
 
             _selectedZoneItems = [];
 
@@ -141,7 +141,12 @@
 
     private void OnChangeMap(ChangeEventArgs args)
     {
-        var id = args.Value.ToString();
+        var id = args?.Value?.ToString() ?? string.Empty;
+
+        if (string.IsNullOrWhiteSpace(id))
+        {
+            return;
+        }
 
         var zone = _zones.First(zone => zone.Key == id).Value;
 
@@ -176,7 +181,7 @@
             var x = Math.Round(((args.ClientX - _mapRect.X) / _mapRect.Width) * 100, 1);
             var y = Math.Round(((args.ClientY - _mapRect.Y) / _mapRect.Height) * 100, 1);
 
-            _mousePosition = new Coordinate(x, y);
+            _mousePosition = new Coordinate(true, x, y);
         }
         else
         {
@@ -191,7 +196,7 @@
 
     private string MapUrl => $"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg";
 
-    public record Coordinate(double X = default, double Y = default);
+    public record Coordinate(bool Over = false, double X = default, double Y = default);
 
     public record ElementRect(double X, double Y, double Width, double Height);
 }

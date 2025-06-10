@@ -1,0 +1,542 @@
+[
+   {
+      "x":48.2,
+      "y":2.9,
+      "source":"Mysterious Orb"
+   },
+   {
+      "x":48.2,
+      "y":2.9,
+      "source":"Mysterious Orb"
+   },
+   {
+      "x":20.5,
+      "y":57.6,
+      "source":"Table RPG PROP"
+   },
+   {
+      "x":20.5,
+      "y":57.6,
+      "source":"Stone mini pillar RPG PROP"
+   },
+   {
+      "x":46,
+      "y":8.5,
+      "source":"Titan Dais Prop"
+   },
+   {
+      "x":46,
+      "y":8.5,
+      "source":"Titan Dais Prop"
+   },
+   {
+      "x":46,
+      "y":8.5,
+      "source":"Titan Dais Prop"
+   },
+   {
+      "x":46,
+      "y":8.5,
+      "source":"Titan Dais Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Titan Pillar Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Titan Pillar Prop"
+   },
+   {
+      "x":46,
+      "y":8.5,
+      "source":"Titan Pillar Prop"
+   },
+   {
+      "x":46,
+      "y":8.5,
+      "source":"Titan Pillar Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Titan Open Hand Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Titan Open Hand Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Titan Open Hand Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Titan Open Hand Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Holy Spell Effect Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Holy Spell Effect Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Holy Spell Effect Prop"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Holy Spell Effect Prop"
+   },
+   {
+      "x":40.8,
+      "y":49.6,
+      "source":"Wooden Plank Prop"
+   },
+   {
+      "x":58.9,
+      "y":48.9,
+      "source":"Firstaid Crate Box"
+   },
+   {
+      "x":58.9,
+      "y":48.9,
+      "source":"Bandages Prop"
+   },
+   {
+      "x":48.8,
+      "y":85.5,
+      "source":"Gnome Tool Bucket Prop"
+   },
+   {
+      "x":48.7,
+      "y":85.5,
+      "source":"bottle black prop"
+   },
+   {
+      "x":33.1,
+      "y":56.1,
+      "source":"shoulder prop for 95928"
+   },
+   {
+      "x":49.1,
+      "y":43.8,
+      "source":"Skeleton laying prop"
+   },
+   {
+      "x":49.1,
+      "y":44.2,
+      "source":"Burning Ash Pile Prop"
+   },
+   {
+      "x":52.9,
+      "y":52.6,
+      "source":"Totem horde no symbol prop"
+   },
+   {
+      "x":50.1,
+      "y":50.4,
+      "source":"Lava Fountain Prop"
+   },
+   {
+      "x":50.1,
+      "y":50.5,
+      "source":"Hot Spot Lava Rock Prop"
+   },
+   {
+      "x":54.7,
+      "y":69,
+      "source":"Basic Tent Excavation Prop"
+   },
+   {
+      "x":54.7,
+      "y":68.8,
+      "source":"Palisades Spike Wall Prop"
+   },
+   {
+      "x":58.9,
+      "y":48.9,
+      "source":"Tent RPG Prop "
+   },
+   {
+      "x":45.8,
+      "y":43,
+      "source":"Skeleton RPG Prop"
+   },
+   {
+      "x":38.5,
+      "y":65.7,
+      "source":"Strongly Scented Bottle"
+   },
+   {
+      "x":56.5,
+      "y":12.4,
+      "source":"Crystal Encased Staff"
+   },
+   {
+      "x":56.5,
+      "y":12.4,
+      "source":"Crystal Encased Staff"
+   },
+   {
+      "x":39.4,
+      "y":75.3,
+      "source":"Preserved Dermal Plate"
+   },
+   {
+      "x":43.4,
+      "y":81.1,
+      "source":"Crystal Resonator Coffer"
+   },
+   {
+      "x":45.6,
+      "y":88.6,
+      "source":"Hive Queen's Antenna"
+   },
+   {
+      "x":63,
+      "y":68.6,
+      "source":"Failed Delivery"
+   },
+   {
+      "x":45.8,
+      "y":43,
+      "source":"Waterlogged Chest"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Ancient Libram"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Ancient Libram"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Ancient Libram"
+   },
+   {
+      "x":46,
+      "y":8.4,
+      "source":"Ancient Libram"
+   },
+   {
+      "x":40.8,
+      "y":49.6,
+      "source":"Spring Blade"
+   },
+   {
+      "x":58.9,
+      "y":48.8,
+      "source":"Heating Blade"
+   },
+   {
+      "x":48.7,
+      "y":85.5,
+      "source":"Fallen Axe"
+   },
+   {
+      "x":33.1,
+      "y":56.1,
+      "source":"Ballast Laden Pauldrons"
+   },
+   {
+      "x":30.6,
+      "y":50.5,
+      "source":"Hot Springs Scouring Basket"
+   },
+   {
+      "x":49.1,
+      "y":43.8,
+      "source":"Glowing Blade"
+   },
+   {
+      "x":52.9,
+      "y":52.6,
+      "source":"Totem of Scorching Sparks"
+   },
+   {
+      "x":49.7,
+      "y":44.9,
+      "source":"Blaze Runners"
+   },
+   {
+      "x":50,
+      "y":50.3,
+      "source":"Volcano Heated Crown"
+   },
+   {
+      "x":48.7,
+      "y":47.2,
+      "source":"Precious Ring"
+   },
+   {
+      "x":52.2,
+      "y":50.1,
+      "source":"Ringo's Throwing Star"
+   },
+   {
+      "x":49.9,
+      "y":56.2,
+      "source":"Forlorn Memorial"
+   },
+   {
+      "x":57.5,
+      "y":91.1,
+      "source":"Feeding Pile"
+   },
+   {
+      "x":50.3,
+      "y":75.7,
+      "source":"Stinger"
+   },
+   {
+      "x":54.6,
+      "y":69,
+      "source":"Sealed Shipping Crate"
+   },
+   {
+      "x":68.9,
+      "y":84.8,
+      "source":"Shareholder's Coffer"
+   },
+   {
+      "x":70.3,
+      "y":84,
+      "source":"Polished Rifle"
+   },
+   {
+      "x":32.5,
+      "y":15.3,
+      "source":"Dreamcatcher"
+   },
+   {
+      "x":65.8,
+      "y":18.4,
+      "source":"Silverback Cape"
+   },
+   {
+      "x":68.5,
+      "y":12,
+      "source":"Jane's Hat"
+   },
+   {
+      "x":32.9,
+      "y":73.4,
+      "source":"Kodo Riding Harness"
+   },
+   {
+      "x":71.9,
+      "y":74.4,
+      "source":"Well Loved Bow"
+   },
+   {
+      "x":80.7,
+      "y":61.1,
+      "source":"Amethyst Shard"
+   },
+   {
+      "x":81.1,
+      "y":39.3,
+      "source":"Strange Glowing Crystal"
+   },
+   {
+      "x":67.4,
+      "y":16.8,
+      "source":"Engineer's Tongs"
+   },
+   {
+      "x":45.7,
+      "y":14.1,
+      "source":"Abandoned Crate"
+   },
+   {
+      "x":20.3,
+      "y":42.7,
+      "source":"Spear of a Slain Hunter"
+   },
+   {
+      "x":20.5,
+      "y":57.6,
+      "source":"Ancient Earth Idol"
+   },
+   {
+      "x":31.1,
+      "y":77.8,
+      "source":"Protruding Bone"
+   },
+   {
+      "x":44.1,
+      "y":91.1,
+      "source":"Small Meteor"
+   },
+   {
+      "x":68.6,
+      "y":56.9,
+      "source":"Mutated Threshadon Heart"
+   },
+   {
+      "x":80.1,
+      "y":49.7,
+      "source":"Shallow Grave"
+   },
+   {
+      "x":77.2,
+      "y":49.9,
+      "source":"Charged Pylon Crystal"
+   },
+   {
+      "x":77.2,
+      "y":49.9,
+      "source":"Charging Box"
+   },
+   {
+      "x":59.9,
+      "y":32.5,
+      "source":"Improvised Lever"
+   },
+   {
+      "x":42.1,
+      "y":22,
+      "source":"Tar-Covered Sproutling"
+   },
+   {
+      "x":65.1,
+      "y":23.6,
+      "source":"Hefty Bone"
+   },
+   {
+      "x":37.8,
+      "y":34,
+      "source":"Slime-Covered Bracers"
+   },
+   {
+      "x":34.6,
+      "y":24.7,
+      "source":"Wooden Chest"
+   },
+   {
+      "x":25.7,
+      "y":50.5,
+      "source":"Beach Bag"
+   },
+   {
+      "x":36.9,
+      "y":51.2,
+      "source":"Beautifully Crafted Bracelets"
+   },
+   {
+      "x":67,
+      "y":67.4,
+      "source":"Ravasaur Claw"
+   },
+   {
+      "x":72.6,
+      "y":51.5,
+      "source":"Sharpened Hatchet"
+   },
+   {
+      "x":44.6,
+      "y":62.1,
+      "source":"Abandoned Mallet"
+   },
+   {
+      "x":31.7,
+      "y":40.7,
+      "source":"Bert's Box of Success"
+   },
+   {
+      "x":44.4,
+      "y":74.4,
+      "source":"Ritual Chest"
+   },
+   {
+      "x":54.6,
+      "y":76.5,
+      "source":"Fallen Adventurer"
+   },
+   {
+      "x":48.2,
+      "y":35.7,
+      "source":"Tar Stuck Wrap"
+   },
+   {
+      "x":67.6,
+      "y":69,
+      "source":"Ravasaur Matriarch's Nest"
+   },
+   {
+      "x":42.2,
+      "y":16.1,
+      "source":"Mysterious Vine"
+   },
+   {
+      "x":54.5,
+      "y":76.4,
+      "source":"Hexed Staff"
+   },
+   {
+      "x":67.9,
+      "y":97.6,
+      "source":"Hidden Cache"
+   },
+   {
+      "x":85,
+      "y":39.6,
+      "source":"Warlord's Blade"
+   },
+   {
+      "x":79.5,
+      "y":79.8,
+      "source":"Ritual Horn"
+   },
+   {
+      "x":85,
+      "y":70.3,
+      "source":"Qiraji-Touched Tool"
+   },
+   {
+      "x":62.8,
+      "y":41,
+      "source":"Vine"
+   },
+   {
+      "x":49.7,
+      "y":45.2,
+      "source":"Rumbling Hot Spot"
+   },
+   {
+      "x":45.6,
+      "y":48.5,
+      "source":"Worldforged Cache"
+   },
+   {
+      "x":33.2,
+      "y":73.1,
+      "source":"Un'Goro Rock"
+   },
+   {
+      "x":63.3,
+      "y":81.6,
+      "source":"Bow"
+   },
+   {
+      "x":32.3,
+      "y":49.8,
+      "source":"Mysterious Cache"
+   }
+]
