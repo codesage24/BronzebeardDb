@@ -7,15 +7,16 @@ public record Item
     string Source,
     Rarity Rarity,
     string Type,
-    string Slot,
+    string icon,
     int RequiresLevel,
     int ItemLevel,
     string Cost,
-    string ZoneId,
     double X,
     double Y
 )
 {
+    public string Title => $"{Source} ({X}, {Y})";
+
     public string GetColor()
     {
         return Rarity switch
@@ -27,7 +28,7 @@ public record Item
             Rarity.Legendary => "var(--legendary-color)",
             Rarity.Vanity or Rarity.Artifact => "var(--vanity-color)",
             Rarity.Heirloom => "var(--heirloom-color)",
-            Rarity.Unknown or Rarity.Common or _ => "var(--common-color)"
+            _ => "var(--common-color)"
         };
     }
 }

@@ -1,21 +1,9 @@
-﻿h1 {
-    text-align: center;
-}
-
-.world-drops {
+﻿.world-drops {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.pane {
-    border-radius: 5px;
-    padding: 20px;
-    width: max-content;
-    margin: 1rem 0;
-    background-color: #303030;
 }
 
 select {
@@ -25,9 +13,19 @@ select {
     border-color: #62543B;
 }
 
+.pane {
+    padding: 5px 12px 0 12px;
+    background-color: #303030;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
 .wd-map {
     min-height: 515px;
     min-width: 772px;
+    padding: 10px;
+    background-color: #303030;
+    margin-bottom: 1rem;
 }
 
     .wd-map span {
@@ -78,9 +76,38 @@ select {
     }
 
 .wd-table {
-    min-width: 812px;
 }
 
-.wd-table table {
-    margin-top: 20px;
-}
+    .wd-table table {
+        border: 2px solid #303030;
+    }
+
+    .wd-table td {
+        vertical-align: middle;
+    }
+
+    .wd-table button {
+        margin: 10px 0;
+    }
+
+    .wd-table a {
+        color: inherit;
+    }
+
+    .wd-table .icon {
+        display: block;
+        position: relative;
+        width: 44px;
+        height: 44px;
+    }
+
+        .wd-table .icon ins {
+            display: block;
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 2px;
+            top: 2px;
+            border: 2px groove #303030;
+            border-radius: 3px;
+        }
