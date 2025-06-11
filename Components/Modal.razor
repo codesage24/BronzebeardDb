@@ -9,14 +9,25 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">@Title</h5>
-                    <button type="button" class="btn-close" @onclick="Close"></button>
+                    <button type="button" class="btn-close" disabled="@_saving" @onclick="Close"></button>
                 </div>
                 <div class="modal-body">
-                    @ChildContent
+                    @if (_saving)
+                    {
+                        <div class="text-center my-3">
+                            <div class="spinner-border text-secondary" role="status">
+                                <span class="visually-hidden">Saving...</span>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        @ChildContent
+                    }
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" @onclick="OnSave">@SaveText</button>
-                    <button type="button" class="btn btn-secondary" @onclick="Close">@CloseText</button>
+                    <button type="button" class="btn btn-primary" disabled="@_saving" @onclick="OnSave">@SaveText</button>
+                    <button type="button" class="btn btn-secondary" disabled="@_saving" @onclick="Close">@CloseText</button>
                 </div>
             </div>
         </div>
@@ -34,11 +45,24 @@
     [Parameter] public EventCallback OnSaveClicked { get; set; }
     [Parameter] public EventCallback<bool> IsVisibleChanged { get; set; }
 
+    bool _saving = false;
+
     private async Task OnSave()
     {
-        await OnSaveClicked.InvokeAsync();
+        _saving = true;
 
-        await Close();
+        try
+        {
+            await OnSaveClicked.InvokeAsync();
+
+            await Close();
+        }
+        finally
+        {
+            _saving = false;
+
+            StateHasChanged();
+        }
     }
 
     public async Task Open()
