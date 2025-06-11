@@ -14,8 +14,10 @@
     <div class="pane wd-map">
         @if (!string.IsNullOrWhiteSpace(_selectedZoneId))
         {
-            <img src="@MapUrl" style="display:none" @onload="@OnMapLoaded" alt="map" />
-            <span style="background: url(@MapUrl)" @onmousemove="OnMouseMoveMap" @onmouseleave="@(_ => _mousePosition = new())" @ref="_mapRef">
+            var mapUrl = $"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg";
+
+            <img src="@mapUrl" style="display:none" @onload="@OnMapLoaded" alt="map" />
+            <span style="background: url(@mapUrl)" @onmousemove="OnMouseMoveMap" @onmouseleave="@(_ => _mousePosition = new())" @ref="_mapRef">
 
                 @foreach (var item in (_selectedMapLoaded ? _selectedZoneItems : []))
                 {
@@ -77,10 +79,12 @@
                         <tr>
                             <td>
                                 <div class="icon">
-                                    <ins style="background-image: url(@($"https://db.ascension.gg/static/images/wow/icons/medium/{(item.Icon ?? "inv_misc_questionmark")}.jpg"))"></ins>
+                                    <ins style="background-image: url(@($"https://db.ascension.gg/static/images/wow/icons/medium/{item.Icon ?? Constants.QuestionMarkIcon}.jpg"))"></ins>
                                 </div>
                             </td>
-                            <td style="color: @(item.GetColor())"><a href="@($"https://db.ascension.gg/?item={item.Id}")" target="_blank">@item.Name</a></td>
+                            <td>
+                                <a style="color: @item.GetColor()" href="@($"https://db.ascension.gg/?item={item.Id}")" target="_blank">@item.Name</a>
+                            </td>
                             <td>@item.Source</td>
                             <td>@item.Type</td>
                             @* <td>@item.RequiresLevel</td> *@
@@ -112,7 +116,7 @@
             <select @bind="_submission.Zone">
                 <option value="">-- Select a Zone --</option>
 
-                @foreach (var (id, zone) in (_zones ?? new Dictionary<string, Zone>()).Where(z => z.Key != "-1"))
+                @foreach (var (_, zone) in (_zones ?? new Dictionary<string, Zone>()).Where(z => z.Key != Constants.AzerothMapId))
                 {
                     <option value="@zone.Name">@zone.Name</option>
                 }
@@ -178,9 +182,7 @@
     {
         if (string.IsNullOrWhiteSpace(ZoneName))
         {
-            const string defaultMapId = "-1"; // map of Azeroth
-
-            _selectedZoneId = defaultMapId;
+            _selectedZoneId = Constants.AzerothMapId;
 
             _selectedZoneItems = [];
 
@@ -260,8 +262,6 @@
         }
     }
 
-    private string MapUrl => $"https://db.ascension.gg/static/images/wow/maps/enus/zoom/{_selectedZoneId}.jpg";
-
     private async Task OpenModal()
     {
         _submission = new Submission();
@@ -269,11 +269,11 @@
         await _modal.Open();
     }
 
-    private Task HandleSave()
+    private async Task HandleSave()
     {
-        Console.WriteLine("Saved");
+        await Http.PostAsJsonAsync($"{Constants.ApiBaseAddress}guilds/{Constants.FafoGuildId}/submit-drop", _submission);
 
-        return Task.CompletedTask;
+        Console.WriteLine("Saved");
     }
 
     public class Submission

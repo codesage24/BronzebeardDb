@@ -8,7 +8,7 @@
     "rarity": "Unknown",
     "type": "",
     "requiresLevel": 0,
-    "maxLevel": 0,
+    "itemLevel": 0,
     "cost": ""
   },
   {
@@ -20,8 +20,8 @@
     "rarity": "Rare",
     "type": "Cloth (Chest)",
     "requiresLevel": 60,
-    "maxLevel": 65,
-    "cost": "82s 69c"
+    "itemLevel": 65,
+    "cost": "82s69c"
   },
   {
     "x": 12.9,
@@ -32,8 +32,8 @@
     "rarity": "Rare",
     "type": "Dagger (MH)",
     "requiresLevel": 60,
-    "maxLevel": 65,
-    "cost": "2g 20s 19c"
+    "itemLevel": 65,
+    "cost": "2g20s19c"
   },
   {
     "x": 12.4,
@@ -69,7 +69,7 @@
     "type": "Sword (1H)",
     "requiresLevel": 60,
     "itemLevel": 65,
-    "cost": "2g 10s 35c"
+    "cost": "2g10s35c"
   },
   {
     "x": 77.9,
@@ -116,7 +116,7 @@
     "rarity": "Rare",
     "type": "Cloth (Waist)",
     "requiresLevel": 60,
-    "maxLevel": 65,
-    "cost": "58s 56c"
+    "itemLevel": 65,
+    "cost": "58s56c"
   }
 ]

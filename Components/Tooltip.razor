@@ -1,0 +1,23 @@
+﻿@typeparam TChild
+
+<div class="tooltip-container" @onmouseover="ShowTooltip" @onmouseout="HideTooltip">
+    @ChildContent
+
+    @if (IsTooltipVisible)
+    {
+        <div class="tooltip-box @Position">
+            @TooltipText
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public string Position { get; set; } = "top";
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string TooltipText { get; set; } = string.Empty;
+
+    private bool IsTooltipVisible { get; set; }
+
+    private void ShowTooltip() => IsTooltipVisible = true;
+    private void HideTooltip() => IsTooltipVisible = false;
+}

@@ -13,6 +13,8 @@ public class Item
     public string Type { get; set; }
     
     public string Icon { get; set; }
+
+    public string Notes { get; set; }
     
     public int RequiresLevel { get; set; }
     
@@ -35,8 +37,9 @@ public class Item
             Rarity.Rare => "var(--rare-color)",
             Rarity.Epic => "var(--epic-color)",
             Rarity.Legendary => "var(--legendary-color)",
-            Rarity.Vanity or Rarity.Artifact => "var(--vanity-color)",
+            Rarity.Vanity => "var(--vanity-color)",
             Rarity.Heirloom => "var(--heirloom-color)",
+            Rarity.Artifact => "var(--artifact-color)",
             _ => "var(--common-color)"
         };
     }
