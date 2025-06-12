@@ -1,277 +1,285 @@
 [
-   {
-      "x":49.3,
-      "y":35.8,
-      "source":"Wax Stained Bag"
-   },
-   {
-      "x":52.8,
-      "y":32.3,
-      "source":"Old Grave "
-   },
-   {
-      "x":52.6,
-      "y":52,
-      "source":"Defias Special Bucket"
-   },
-   {
-      "x":49.6,
-      "y":32,
-      "source":"Alliance Gem of Fortitude"
-   },
-   {
-      "x":61.9,
-      "y":47.3,
-      "source":"Glinting Kobold Corpse"
-   },
-   {
-      "x":24.5,
-      "y":94.2,
-      "source":"Riverpaw Pack Chieftain's Lunch"
-   },
-   {
-      "x":68.2,
-      "y":45,
-      "source":"Riverpaw Pack Second in Command's Lunch"
-   },
-   {
-      "x":74.5,
-      "y":51.4,
-      "source":"Stormwind Memento Offering"
-   },
-   {
-      "x":84.7,
-      "y":79.2,
-      "source":"Watchtower Lookout Supplies"
-   },
-   {
-      "x":77.7,
-      "y":85.8,
-      "source":"Murloc Voodoo Toy"
-   },
-   {
-      "x":69.3,
-      "y":79.3,
-      "source":"Scarecrow Branch"
-   },
-   {
-      "x":65,
-      "y":69.7,
-      "source":"Lexicon of Azora - Part I: Mage Inscriptions"
-   },
-   {
-      "x":48.2,
-      "y":87.2,
-      "source":"Dockmaster's Stolen Supplies"
-   },
-   {
-      "x":17.1,
-      "y":68.7,
-      "source":"Thunder Falls Enchanted Branches"
-   },
-   {
-      "x":24.7,
-      "y":57.8,
-      "source":"Thunder Falls Finest Gun Selection"
-   },
-   {
-      "x":30.6,
-      "y":64.8,
-      "source":"Loop of the Sly Rogue"
-   },
-   {
-      "x":41.1,
-      "y":78.7,
-      "source":"The One Candle"
-   },
-   {
-      "x":84.7,
-      "y":79.2,
-      "source":"Lookout Scope"
-   },
-   {
-      "x":32.4,
-      "y":103.5,
-      "source":"Catacombs Relic Torch"
-   },
-   {
-      "x":33.2,
-      "y":98.8,
-      "source":"Alchemy Visceral Juice"
-   },
-   {
-      "x":35.1,
-      "y":96.2,
-      "source":"Peculiar Root"
-   },
-   {
-      "x":30.2,
-      "y":104.7,
-      "source":"Scroll of Curses"
-   },
-   {
-      "x":33.4,
-      "y":102.5,
-      "source":"Unlit Twilight Candle"
-   },
-   {
-      "x":47.4,
-      "y":29.7,
-      "source":"Worn Shovel"
-   },
-   {
-      "x":57.6,
-      "y":48.2,
-      "source":"Sword in a Board"
-   },
-   {
-      "x":55.7,
-      "y":35.1,
-      "source":"Waterlogged Chest"
-   },
-   {
-      "x":52.5,
-      "y":58.8,
-      "source":"Defias Cowl"
-   },
-   {
-      "x":65.1,
-      "y":56.3,
-      "source":"Enchanted Kobold Lantern"
-   },
-   {
-      "x":50.7,
-      "y":51.2,
-      "source":"Apprentice Staff"
-   },
-   {
-      "x":40,
-      "y":48.4,
-      "source":"Spare Equipment"
-   },
-   {
-      "x":44.3,
-      "y":66.2,
-      "source":"Heavy Iron Pan"
-   },
-   {
-      "x":46.4,
-      "y":75.5,
-      "source":"Defias Shanker"
-   },
-   {
-      "x":43.5,
-      "y":84.9,
-      "source":"Billy's Hidden Life Savings"
-   },
-   {
-      "x":34.1,
-      "y":82.6,
-      "source":"Homer's Boar Harvester"
-   },
-   {
-      "x":23.5,
-      "y":80.3,
-      "source":"Confiscated Crossbow"
-   },
-   {
-      "x":24.3,
-      "y":73.1,
-      "source":"Morale Boosters"
-   },
-   {
-      "x":54.2,
-      "y":67,
-      "source":"Murloc Ritual Stick"
-   },
-   {
-      "x":89.5,
-      "y":79.8,
-      "source":"Jack's Toothpicker"
-   },
-   {
-      "x":81.6,
-      "y":63.7,
-      "source":"Embedded Axe"
-   },
-   {
-      "x":83.3,
-      "y":66.9,
-      "source":"Riding Cloak"
-   },
-   {
-      "x":47.7,
-      "y":62.7,
-      "source":"Murder Machete"
-   },
-   {
-      "x":21,
-      "y":84.6,
-      "source":"Forgotten Shipment"
-   },
-   {
-      "x":89.2,
-      "y":79,
-      "source":"Supply Cache"
-   },
-   {
-      "x":55.9,
-      "y":34.3,
-      "source":"Uther's Statue"
-   },
-   {
-      "x":74.8,
-      "y":37,
-      "source":"Ball of Yarn"
-   },
-   {
-      "x":25.3,
-      "y":72.4,
-      "source":"Box of Smoke Bombs"
-   },
-   {
-      "x":34.6,
-      "y":63.6,
-      "source":"Fishing Box"
-   },
-   {
-      "x":85.3,
-      "y":69.5,
-      "source":"Old Buckler"
-   },
-   {
-      "x":72.2,
-      "y":64.9,
-      "source":"Mauled Skeleton"
-   },
-   {
-      "x":36,
-      "y":65.6,
-      "source":"Stolen Cargo"
-   },
-   {
-      "x":38.9,
-      "y":60.2,
-      "source":"Loose Dirt"
-   },
-   {
-      "x":71.6,
-      "y":71.1,
-      "source":"Traveling Cloth"
-   },
-   {
-      "x":57,
-      "y":79.1,
-      "source":"Stolen Belongings"
-   },
-   {
-      "x":64.9,
-      "y":70.8,
-      "source":"Mysterious Gem"
-   },
-   {
-      "x":25.2,
-      "y":72.5,
-      "source":"Stink Bombs"
-   }
+  {
+    "x": 49.3,
+    "y": 35.8,
+    "source": "Wax Stained Bag"
+  },
+  {
+    "x": 52.8,
+    "y": 32.3,
+    "source": "Old Grave "
+  },
+  {
+    "x": 52.6,
+    "y": 52,
+    "source": "Defias Special Bucket"
+  },
+  {
+    "x": 49.6,
+    "y": 32,
+    "source": "Alliance Gem of Fortitude"
+  },
+  {
+    "x": 61.9,
+    "y": 47.3,
+    "source": "Glinting Kobold Corpse"
+  },
+  {
+    "x": 24.5,
+    "y": 94.2,
+    "source": "Riverpaw Pack Chieftain's Lunch"
+  },
+  {
+    "x": 68.2,
+    "y": 45,
+    "source": "Riverpaw Pack Second in Command's Lunch"
+  },
+  {
+    "x": 74.5,
+    "y": 51.4,
+    "source": "Stormwind Memento Offering"
+  },
+  {
+    "x": 84.7,
+    "y": 79.2,
+    "source": "Watchtower Lookout Supplies"
+  },
+  {
+    "x": 77.7,
+    "y": 85.8,
+    "source": "Murloc Voodoo Toy"
+  },
+  {
+    "x": 69.3,
+    "y": 79.3,
+    "source": "Scarecrow Branch"
+  },
+  {
+    "x": 65,
+    "y": 69.7,
+    "source": "Lexicon of Azora - Part I: Mage Inscriptions"
+  },
+  {
+    "x": 48.2,
+    "y": 87.2,
+    "source": "Dockmaster's Stolen Supplies"
+  },
+  {
+    "x": 17.1,
+    "y": 68.7,
+    "source": "Thunder Falls Enchanted Branches"
+  },
+  {
+    "x": 24.7,
+    "y": 57.8,
+    "source": "Thunder Falls Finest Gun Selection"
+  },
+  {
+    "x": 30.6,
+    "y": 64.8,
+    "source": "Loop of the Sly Rogue"
+  },
+  {
+    "x": 41.1,
+    "y": 78.7,
+    "source": "The One Candle"
+  },
+  {
+    "x": 84.7,
+    "y": 79.2,
+    "source": "Lookout Scope"
+  },
+  {
+    "x": 32.4,
+    "y": 103.5,
+    "source": "Catacombs Relic Torch"
+  },
+  {
+    "x": 33.2,
+    "y": 98.8,
+    "source": "Alchemy Visceral Juice"
+  },
+  {
+    "x": 35.1,
+    "y": 96.2,
+    "source": "Peculiar Root"
+  },
+  {
+    "x": 30.2,
+    "y": 104.7,
+    "source": "Scroll of Curses"
+  },
+  {
+    "x": 33.4,
+    "y": 102.5,
+    "source": "Unlit Twilight Candle"
+  },
+  {
+    "x": 47.4,
+    "y": 29.7,
+    "source": "Worn Shovel"
+  },
+  {
+    "x": 57.6,
+    "y": 48.2,
+    "source": "Sword in a Board"
+  },
+  {
+    "x": 55.7,
+    "y": 35.1,
+    "source": "Waterlogged Chest"
+  },
+  {
+    "x": 52.5,
+    "y": 58.8,
+    "source": "Defias Cowl"
+  },
+  {
+    "x": 65.1,
+    "y": 56.3,
+    "source": "Enchanted Kobold Lantern"
+  },
+  {
+    "x": 50.7,
+    "y": 51.2,
+    "source": "Apprentice Staff"
+  },
+  {
+    "x": 40,
+    "y": 48.4,
+    "source": "Spare Equipment"
+  },
+  {
+    "x": 44.3,
+    "y": 66.2,
+    "source": "Heavy Iron Pan"
+  },
+  {
+    "x": 46.4,
+    "y": 75.5,
+    "source": "Defias Shanker"
+  },
+  {
+    "x": 43.5,
+    "y": 84.9,
+    "source": "Billy's Hidden Life Savings"
+  },
+  {
+    "x": 34.1,
+    "y": 82.6,
+    "source": "Homer's Boar Harvester"
+  },
+  {
+    "x": 23.5,
+    "y": 80.3,
+    "source": "Confiscated Crossbow"
+  },
+  {
+    "x": 24.3,
+    "y": 73.1,
+    "source": "Morale Boosters"
+  },
+  {
+    "x": 54.2,
+    "y": 67,
+    "source": "Murloc Ritual Stick"
+  },
+  {
+    "x": 89.5,
+    "y": 79.8,
+    "source": "Jack's Toothpicker"
+  },
+  {
+    "x": 81.6,
+    "y": 63.7,
+    "source": "Embedded Axe"
+  },
+  {
+    "x": 83.3,
+    "y": 66.9,
+    "source": "Riding Cloak"
+  },
+  {
+    "x": 47.7,
+    "y": 62.7,
+    "source": "Murder Machete"
+  },
+  {
+    "x": 21,
+    "y": 84.6,
+    "source": "Forgotten Shipment"
+  },
+  {
+    "x": 89.2,
+    "y": 79,
+    "source": "Supply Cache"
+  },
+  {
+    "x": 55.9,
+    "y": 34.3,
+    "source": "Uther's Statue"
+  },
+  {
+    "x": 74.8,
+    "y": 37,
+    "source": "Ball of Yarn"
+  },
+  {
+    "x": 25.3,
+    "y": 72.4,
+    "source": "Box of Smoke Bombs"
+  },
+  {
+    "x": 34.6,
+    "y": 63.6,
+    "source": "Fishing Box"
+  },
+  {
+    "x": 85.3,
+    "y": 69.5,
+    "source": "Old Buckler"
+  },
+  {
+    "x": 72.2,
+    "y": 64.9,
+    "source": "Mauled Skeleton"
+  },
+  {
+    "x": 36,
+    "y": 65.6,
+    "source": "Stolen Cargo"
+  },
+  {
+    "x": 38.9,
+    "y": 60.2,
+    "source": "Loose Dirt",
+    "id": "521121",
+    "name": "Decayed Breeches",
+    "rarity": "Uncommon",
+    "type": "Cloth (Legs)",
+    "requiresLevel": 10,
+    "itemLevel": 15,
+    "cost": "6s58c",
+    "content": "Bind:BOP|Slot:Legs|Type:Cloth|Armor:18|Stat:2 STA|RL:10|IL:15|Equip:Improves critical strike rating by 2.|PVE:38"
+  },
+  {
+    "x": 71.6,
+    "y": 71.1,
+    "source": "Traveling Cloth"
+  },
+  {
+    "x": 57,
+    "y": 79.1,
+    "source": "Stolen Belongings"
+  },
+  {
+    "x": 64.9,
+    "y": 70.8,
+    "source": "Mysterious Gem"
+  },
+  {
+    "x": 25.2,
+    "y": 72.5,
+    "source": "Stink Bombs"
+  }
 ]
