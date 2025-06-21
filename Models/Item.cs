@@ -8,7 +8,7 @@ public class Item
     
     public string Source { get; set; }
     
-    public Rarity Rarity { get; set; }
+    public Rarity? Rarity { get; set; }
     
     public string Type { get; set; }
     
@@ -30,16 +30,21 @@ public class Item
 
     public string GetColor()
     {
-        return Rarity switch
+        if (!Rarity.HasValue)
         {
-            Rarity.Poor => "var(--poor-color)",
-            Rarity.Uncommon => "var(--uncommon-color)",
-            Rarity.Rare => "var(--rare-color)",
-            Rarity.Epic => "var(--epic-color)",
-            Rarity.Legendary => "var(--legendary-color)",
-            Rarity.Vanity => "var(--vanity-color)",
-            Rarity.Heirloom => "var(--heirloom-color)",
-            Rarity.Artifact => "var(--artifact-color)",
+            return "var(--common-color)";
+        }
+
+        return Rarity.Value switch
+        {
+            Models.Rarity.Poor => "var(--poor-color)",
+            Models.Rarity.Uncommon => "var(--uncommon-color)",
+            Models.Rarity.Rare => "var(--rare-color)",
+            Models.Rarity.Epic => "var(--epic-color)",
+            Models.Rarity.Legendary => "var(--legendary-color)",
+            Models.Rarity.Vanity => "var(--vanity-color)",
+            Models.Rarity.Heirloom => "var(--heirloom-color)",
+            Models.Rarity.Artifact => "var(--artifact-color)",
             _ => "var(--common-color)"
         };
     }
