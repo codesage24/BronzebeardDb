@@ -56,7 +56,7 @@
             <div class="col-sm-auto">
                 @* <Tooltip Text="This is a test!" Position="@Position.Top"></Tooltip> *@
                 
-                <button class="btn btn-dark" @onclick="OpenModal">Submit Drop</button>
+                @* <button class="btn btn-dark" @onclick="OpenModal">Submit Drop</button> *@
             </div>
         </div>
 
@@ -175,7 +175,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var zones = await Http.GetFromJsonAsync<Zone[]>("https://sagebot.azurewebsites.net/api/bbdb/zones", _jsonOptions);
+        var zones = await Http.GetFromJsonAsync<Zone[]>("content/zones.json", _jsonOptions);
 
         _zones = zones.ToDictionary(x => x.Id, y => y);
     }
@@ -237,7 +237,7 @@
             return [];
         }
 
-        var response = await Http.GetAsync($"https://sagebot.azurewebsites.net/api/bbdb/zones/{_selectedZoneId}/world-drops");
+        var response = await Http.GetAsync($"content/world-drops/wd-{_selectedZoneId}.json");
 
         if (!response.IsSuccessStatusCode || response.StatusCode == System.Net.HttpStatusCode.NoContent)
         {
