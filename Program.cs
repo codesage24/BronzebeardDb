@@ -1,3 +1,4 @@
+using BronzebeardDb.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
@@ -11,9 +12,15 @@ namespace BronzebeardDb
             builder.RootComponents.Add<App>("#app");
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            AddServices(builder.Services, builder.HostEnvironment);
 
             await builder.Build().RunAsync();
+        }
+
+        public static void AddServices(IServiceCollection services, IWebAssemblyHostEnvironment environment)
+        {
+            services.AddScoped<ILocalStorageService, LocalStorageService>();
+            services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(environment.BaseAddress) });
         }
     }
 }
