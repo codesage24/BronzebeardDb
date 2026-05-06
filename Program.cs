@@ -2,25 +2,24 @@ using BronzebeardDb.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
-namespace BronzebeardDb
+namespace BronzebeardDb;
+
+public class Program
 {
-    public class Program
+    public static async Task Main(string[] args)
     {
-        public static async Task Main(string[] args)
-        {
-            var builder = WebAssemblyHostBuilder.CreateDefault(args);
-            builder.RootComponents.Add<App>("#app");
-            builder.RootComponents.Add<HeadOutlet>("head::after");
+        var builder = WebAssemblyHostBuilder.CreateDefault(args);
+        builder.RootComponents.Add<App>("#app");
+        builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            AddServices(builder.Services, builder.HostEnvironment);
+        AddServices(builder.Services, builder.HostEnvironment);
 
-            await builder.Build().RunAsync();
-        }
+        await builder.Build().RunAsync();
+    }
 
-        public static void AddServices(IServiceCollection services, IWebAssemblyHostEnvironment environment)
-        {
-            services.AddScoped<ILocalStorageService, LocalStorageService>();
-            services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(environment.BaseAddress) });
-        }
+    public static void AddServices(IServiceCollection services, IWebAssemblyHostEnvironment environment)
+    {
+        services.AddScoped<ILocalStorageService, LocalStorageService>();
+        services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(environment.BaseAddress) });
     }
 }
