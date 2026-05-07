@@ -1,1 +1,29 @@
-﻿
+﻿.gearing-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 2rem;
+}
+
+.items-stats, .item {
+    border: 1px solid var(--vanity-color);
+    padding: 0.5em;
+}
+
+.item {
+    margin: 0.5em;
+    display: grid;
+    grid-template-areas: 'image type';
+}
+
+    .item img {
+        grid-area: image;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .item span {
+        grid-area: type;
+        font-weight: bold;
+        margin-left: 1em;
+    }

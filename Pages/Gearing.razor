@@ -1,9 +1,35 @@
 ﻿@page "/gearing"
 
 <div class="gearing-page">
+    <div class="items items-left">
+        @foreach (var itemType in itemTypes["Left"])
+        {
+            <div class="item item-@itemType">
+                <img src="images/bag.jpg" />
+                <span>@itemType.ToUpper()</span>
+            </div>
+        }
+    </div>
 
+    <div class="items items-stats">
+
+    </div>
+
+    <div class="items items-right">
+        @foreach (var itemType in itemTypes["Right"])
+        {
+            <div class="item item-@itemType">
+                <img src="images/bag.jpg" />
+                <span>@itemType.ToUpper()</span>
+            </div>
+        }
+    </div>
 </div>
 
 @code {
-
+    static Dictionary<string, string[]> itemTypes = new Dictionary<string, string[]>()
+    {
+        ["Left"] = new string[] { "Head", "Neck", "Shoulder", "Back", "Chest", "Wrist", "Main Hand", "Off Hand", "Ranged" },
+        ["Right"] = new string[] { "Hands", "Waist", "Legs", "Feet", "Finger 1", "Finger 2", "Trinket 1", "Trinket 2" }
+    };
 }
